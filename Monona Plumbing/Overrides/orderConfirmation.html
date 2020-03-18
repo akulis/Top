@@ -1,0 +1,14 @@
+<section>
+  <accountnavigation ng-show="user.Permissions.contains('ViewSelfAdmin') || user.Type == 'Customer'" />
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title panel-primary">{{('Order' | r) + ' ' + ('Confirmation' | r) | xlat }}</h3>
+    </div>
+    <div class="panel-body">
+      <p>Please review your order for accuracy.</p>
+      <p>If you have purchased items that are on backorder, please note that any items currently available will be processed and shipped; the backorder will be shipped separately. If you receive notice of a backorder and wish to instead cancel that portion of your order, please contact Customer Service at 608-826-6990 or <a href="mailto:webservices@toppromotions.com?subject=UW%20BuckBoss%20Customer%20Service%20Question">webservices@toppromotions.com</a>. Please have your original order number available.</p>
+    </div>
+    <div class="panel-footer">
+    </div>
+  </div>
+</section>

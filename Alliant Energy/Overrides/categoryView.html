@@ -1,0 +1,93 @@
+<section>
+  <!-- Edit Announcement Here -->
+  <!-- <br>
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2 class="panel-title panel-primary">{{'Announcement' | r | xlat}}</h2>
+    </div>
+    <div class="panel-body">
+      <h4 class="text-center"></h4>
+    </div>
+  </div>
+  <br> -->
+  <!-- End Announcement -->
+  <!-- Selective Category Heading -->
+  <!-- <br> -->
+  <!-- Set currentCategory.Name == to categories where heading will show -->
+  <!-- <div class="panel panel-primary" ng-show="currentCategory.Name == 'Apparel'" >
+    <div class="panel-heading">
+      <h2 class="panel-title panel-primary">
+        {{'Important Announcement -- PLEASE READ' | r | xlat}}
+      </h2>
+    </div>
+    <div class="panel-body">
+      <h4 class="text-center"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>  Enter text here.</h4>
+    </div>
+  </div>
+  <br> -->
+  <!-- End Selective Category Heading -->
+  <!-- Running Purchase Power Disclaimer -->
+  <br />
+  <div class="panel panel-primary" ng-show="(currentCategory.Name === 'Special Orders')">
+    <div class="text-center panel-body">
+      <h4>Don't see what you want on the site?  For Special Orders contact:</h4>
+      <br>
+      <p>Lisa Sudmeier</p>
+      <p><a href="mailto:lsudmeier@toppromotions.com?subject=Alliant%20Special%20Orders">lsudmeier@toppromotions.com</a></p>
+      <p>608-826-6926</p>
+    </div>
+  </div>
+  <br />
+  <!-- End Running Purchase Power Disclaimer -->
+  <nav id="451qa_nav_hdr" class="nav">
+    <ul>
+      <li class="hidden-sm hidden-xs">
+        <span ng-click="toggleNav()"><i class="fa fa-bars" ng-class="{ 'text-info': navStatus.visible }"></i></span>
+      </li>
+      <li>
+        <span id="451_lbl_curcat" class="text-primary" ng-bind-html="currentCategory.Name || '  {{'Categories' | r | xlat}}'"></span>
+      </li>
+      <li class="customSearchBar">
+        <productsearchinput></productsearchinput>
+        <!-- <a href="search">
+          <span><i class="fa fa-search text-primary"></i></span>
+        </a> -->
+      </li>
+    </ul>
+  </nav>
+  <div class="row">
+    <aside class="col-md-3 visible-md visible-lg" ng-if="navStatus.visible">
+      <div class="panel panel-default panel-nav">
+        <div class="panel-heading">
+          <h3 class="panel-title">{{'Category List' | r | xlat}}</h3>
+        </div>
+        <nav class="nav 451qa_sidenav panel-body">
+          <ul>
+            <categorycollapse tree='tree' current='currentCategory'></categorycollapse>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <div ng-class="{ 'col-md-9': navStatus.visible, 'col-md-12': !navStatus.visible }" >
+      <!-- Above Category Message -->
+      <br>
+      <div class="categoryPanel" ng-show="(currentCategory.Name === {{'Categories' | r | xlat}})">
+        <p>Orders are processed twice a month on the following schedule:</p>
+        <p>Orders placed by the 8th of the month will ship on 28th.</p>
+        <p>Orders placed by the 22nd of the month will ship on the 11th of the following month.</p>
+        </div>
+      <br>
+      <!-- End Message -->
+      <categorylistview></categorylistview>
+      <loadingindicator ng-show="productLoadingIndicator" title="{{'Please wait while we fetch all products' | r | xlat}}"/>
+      <!-- Below Category Message -->
+      <br>
+      <div class="categoryPanel" ng-show="(currentCategory.Name === {{'Categories' | r | xlat}})">
+        <p>All of the items featured on this site are made-to-order just for you, so we appreciate your understanding that returns and exchanges are not accepted except in the case of defective product.</p>
+      </div>
+      <br>
+      <!-- End Message -->
+      <productlistview></productlistview>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,80 @@
+<section>
+  <!-- Edit Announcement Here -->
+  <!-- <br>
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2 class="panel-title panel-primary">{{'Announcement' | r | xlat}}</h2>
+    </div>
+    <div class="panel-body">
+      <h4 class="text-center">... will be closed Friday, March 25th, in observance of Good Friday. National Service Gear wishes you and your family a safe and Happy Holiday weekend.</h4>
+    </div>
+  </div>
+  <br> -->
+  <!-- End Announcement -->
+  <!-- Selective Category Heading -->
+  <!-- <br> -->
+  <!-- Set currentCategory.Name == to categories where heading will show -->
+  <!-- <div class="panel panel-primary" ng-show="currentCategory.Name == 'Apparel'" >
+    <div class="panel-heading">
+      <h2 class="panel-title panel-primary">
+        {{'Important Announcement -- PLEASE READ' | r | xlat}}
+      </h2>
+    </div>
+    <div class="panel-body">
+      <h4 class="text-center"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>  Enter text here.</h4>
+    </div>
+  </div>
+  <br> -->
+  <!-- End Selective Category Heading -->
+  <nav id="451qa_nav_hdr" class="nav">
+    <ul>
+      <li class="hidden-sm hidden-xs">
+        <span ng-click="toggleNav()"><i class="fa fa-bars" ng-class="{ 'text-info': navStatus.visible }"></i></span>
+      </li>
+      <li>
+        <span id="451_lbl_curcat" class="text-primary" ng-bind-html="currentCategory.Name || '  {{'Categories' | r | xlat}}'"></span>
+      </li>
+      <li class="customSearchBar">
+        <productsearchinput></productsearchinput>
+        <!-- <a href="search">
+          <span><i class="fa fa-search text-primary"></i></span>
+        </a> -->
+      </li>
+    </ul>
+  </nav>
+  <div class="row">
+    <aside class="col-md-3 visible-md visible-lg" ng-if="navStatus.visible">
+      <div class="panel panel-default panel-nav">
+        <div class="panel-heading">
+          <h3 class="panel-title">{{'Category List' | r | xlat}}</h3>
+        </div>
+        <nav class="nav 451qa_sidenav panel-body">
+          <ul>
+            <categorycollapse tree='tree' current='currentCategory'></categorycollapse>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <div ng-class="{ 'col-md-9': navStatus.visible, 'col-md-12': !navStatus.visible }" >
+      <!-- Above Category Message -->
+      <br>
+      <div class="categoryPanel" ng-show="(currentCategory.Name === {{'Categories' | r | xlat}})">
+        <li>Store open March 6-March 17, 2017. Orders will ship April 12, 2017.</li>
+      </div>
+      <br>
+      <!-- End Message -->
+      <categorylistview></categorylistview>
+      <loadingindicator ng-show="productLoadingIndicator" title="{{'Please wait while we fetch all products' | r | xlat}}"/>
+      <!-- Below Category Message -->
+      <!-- <br>
+      <div class="categoryPanel" ng-show="(currentCategory.Name === {{'Categories' | r | xlat}})">
+        <li class="font-size-13">Personalization is being offered on the selected items. Specify the Name you want on your garment during the ordering process. An additional cost of $5.00 per name will be added to the price shown for the product.</li>
+        <li class="font-size-13">Items will be produced with the personalization shown on the order. If an incorrect name is provided and produced as ordered, it will be the responsibility of the buyer.</li>
+        <li class="font-size-13">All of the items featured are made-to order just for you, so we appreciate your understanding that returns and exchanges are not accepted except in the case of defective product. Please use the provided size charts to assist in purchasing the proper size.</li>
+      </div>
+      <br> -->
+      <!-- End Message -->
+      <productlistview></productlistview>
+    </div>
+  </div>
+</section>

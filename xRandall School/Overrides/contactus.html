@@ -1,0 +1,22 @@
+<section>
+  <accountnavigation ng-show="user.Permissions.contains('ViewSelfAdmin') || user.Type == 'Customer'" />
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title panel-primary">{{('Help' | r) | xlat }}</h3>
+    </div>
+    <div class="panel-body contactUsList" style="font-family:sans-serif">
+      <h3>Customer Service</h3>
+      <p>If you have any questions about your order, please contact Top Promotions at: 608-826-6990 or via e-mail at <a href="mailto:webservices@toppromotions.com?subject=Randall%20School%20Customer%20Service%20Question">webservices@toppromotions.com</a>.</p>
+      <h3>Product Delivery</h3>
+      <p>All orders will be produced and brought over to the school at the same time.</p>
+      <p>For questions regarding the website or an existing order please contact Top Promotions Customer Service at <a href="mailto:webservices@toppromotions.com?subject=Randall%20School%20Customer%20Service%20Question">webservices@toppromotions.com</a>        or 608-826-6990.</p>
+      <h3>Returns/Exchanges</h3>
+      <p>Each item is custom made for your order so we appreciate your understanding that returns/exchanges are not available except in the case of an item defect.</p>
+      <h3><strong>Payment</strong></h3>
+      <h3>Credit Card Purchases</h3>
+      <p>Please provide as the billing address the address where your credit card statement is received. A pre-authorization will occur on your credit card at the time the order is placed. Your card will be charged on the day that the order ships.</p>
+    </div>
+    <div class="panel-footer">
+    </div>
+  </div>
+</section>

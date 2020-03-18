@@ -1,0 +1,5 @@
+GREY  434f4e
+TEAL 006979
+GREEN 2e9248
+Orange ea7e24
+red a9414d

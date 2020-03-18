@@ -1,0 +1,69 @@
+<section>
+  <!-- Edit Announcement Here -->
+  <!-- Good Friday Holiday -->
+  <!-- <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2 class="panel-title panel-primary">
+        {{'Holiday Announcement' | r | xlat}}
+      </h2>
+    </div>
+    <div class="panel-body">
+      <h4 class="NSGcenter"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> Please be aware that National Service Gear will be closed Friday, April 19th, in observance of Good Friday. We will be open again on Monday, April 22nd, at 8a
+        CST. National Service Gear & Industries for the Blind and Visually Imparied would like to wish you and your family a safe and happy holiday weekend.</h4>
+    </div>
+  </div>
+  <br> -->
+  <nav id="451qa_nav_hdr" class="nav">
+    <ul>
+      <li class="hidden-sm hidden-xs">
+        <span ng-click="toggleNav()"><i class="fa fa-bars" ng-class="{ 'text-info': navStatus.visible }"></i></span>
+      </li>
+      <li>
+        <span id="451_lbl_curcat" class="text-primary" ng-bind-html="currentCategory.Name || '  {{'Categories' | r | xlat}}'"></span>
+      </li>
+      <li class="customSearchBar">
+        <productsearchinput></productsearchinput>
+        <!-- <a href="search">
+          <span><i class="fa fa-search text-primary"></i></span>
+        </a> -->
+      </li>
+    </ul>
+  </nav>
+  <div class="row">
+    <aside class="col-md-3 visible-md visible-lg" ng-if="navStatus.visible">
+      <div class="panel panel-default panel-nav">
+        <div class="panel-heading">
+          <h3 class="panel-title">{{'Category List' | r | xlat}}</h3>
+        </div>
+        <nav class="nav 451qa_sidenav panel-body">
+          <ul>
+            <categorycollapse tree='tree' current='currentCategory'></categorycollapse>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <div ng-class="{ 'col-md-9': navStatus.visible, 'col-md-12': !navStatus.visible }">
+      <!-- Above Category Message -->
+      <!-- <br>
+      <div class="categoryPanel text-center" ng-show="(currentCategory.Name === {{'Categories' | r | xlat}})">
+        <h2 class="colorBlack"><strong>Welcome to the Foremost Webstore!</strong></h2>
+        <h4>Your resource for high quality apparel</h4>
+      </div>
+      <br> -->
+      <!-- End Message -->
+      <categorylistview></categorylistview>
+      <loadingindicator ng-show="productLoadingIndicator" title="{{'Please wait while we fetch all products' | r | xlat}}" />
+      <!-- Below Category Message -->
+      <br>
+      <div class="categoryPanel" ng-show="(currentCategory.Name === {{'Categories' | r | xlat}})">
+        <ul>
+          <li>Apparel Orders placed between the XXX and XXX will be shipped by XXX</li>
+          <li>Apparel Orders placed between the YYY and YYY will be shipped by YYY</li>
+        </ul>
+      </div>
+      <br>
+      <!-- End Message -->
+      <productlistview></productlistview>
+    </div>
+  </div>
+</section>

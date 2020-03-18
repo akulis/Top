@@ -1,0 +1,16 @@
+<section>
+  <accountnavigation ng-show="user.Permissions.contains('ViewSelfAdmin') || user.Type == 'Customer'" />
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title panel-primary">{{('Order' | r) + ' ' + ('Confirmation' | r) | xlat }}</h3>
+    </div>
+    <div class="panel-body">
+      <p>Orders placed between the 1st and 15th of each month will ship around the 1st business day of the next month.</p>
+      <p>Orders placed between the 16th and end of the month will ship around the 15th of the next month.</p>
+      <p><i>All of the items featured on this site are made-to-order just for you, so we appreciate your understanding that returns and exchanges are not accepted except in the case of defective product.</i></p>
+      <p>If you need to make changes to your order before the end of the ordering window, call customer service at 608-826-6990 or via e-mail at <a href="mailto:webservices@toppromotions.com?subject=Foremost%20Webstore%20Customer%20Service%20Question">webservices@toppromotions.com</a> and we will do our best to accommodate your request. You will receive an e-mail confirmation that your change was processed. </p>
+    </div>
+    <div class="panel-footer">
+    </div>
+  </div>
+</section>

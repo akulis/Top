@@ -1,0 +1,22 @@
+<section>
+  <accountnavigation ng-show="user.Permissions.contains('ViewSelfAdmin') || user.Type == 'Customer'" />
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title panel-primary">{{('Help' | r) | xlat }}</h3>
+    </div>
+    <div class="panel-body contactUsList" style="font-family:sans-serif">
+      <h3>Placing an Order</h3>
+      <p>To order merchandise, add selected items and quantities to your shopping card and proceed through the checkout process.</p>
+      <p>Stock items will ship within 3 business days.</p>
+      <p>Please allow 10 working days for production on custom orders.</p>
+      <h3>Returns</h3>
+      <p>Stock items may be returned for any reason within 30 days of original shipping. Returns must be in new, unworn, unlaundered condition. Download the return form below, fill out and include with returned product. We appreciate your understanding that custom orders may only be returned in the case of defect.</p>
+      <p>Questions?  Contact customer service at <a href="mailto:webstores@toppromotions.com?subject=Cleary%20Webstore%20Customer%20Service">webstores@toppromotions.com</a> or 608-826-6990, if you have a question about your order, please have your order # available.</p>
+      <p>For custom item quotes, contact Lisa Sudmeier at<a href="mailto:lsudmeier@toppromotions.com?subject=Top%20Promotions%20Inquiry">lsudmeier@toppromotions.com</a> or 608-826-6926.</p>
+      <p>View our <a href="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/docs/Terms.pdf" target="_blank">Terms & Conditions</a>.</p>
+      <p>Download a <a href="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/docs/Return.pdf" target="_blank">Return Form</a>.</p>
+    </div>
+    <div class="panel-footer">
+    </div>
+  </div>
+</section>

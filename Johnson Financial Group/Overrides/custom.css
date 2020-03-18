@@ -1,0 +1,173 @@
+/* Login Logo */
+
+.loginLogo {
+  max-width: 100%;
+  max-height: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 15px;
+}
+
+/* Jumbo Header Text */
+
+.jumboHeaderText {
+  text-align: center;
+  /*vertical-align: middle;*/
+  /*padding-top: 20px;*/
+  color: #ffffff;
+  /* Change banner color */
+  /*position: relative;
+    top: 50%;
+    transform: translateY(-50%);*/
+}
+
+/*Edit Jumbrotron width - $ak */
+
+.jumbotron {
+  margin: 45px 0px -45px;
+  /* margin: 45px 5px -45px; */
+  display: none;
+}
+
+.container .jumbotron, .container-view .jumbotron {
+  border-radius: 0px;
+}
+
+.jumbotron .row {
+  color: #ffffff;
+}
+
+.jumbotron {
+  padding: 0px;
+}
+
+/* Navbar Logo */
+
+.navLogo {
+  max-width: 100%;
+  max-height: 40px;
+}
+
+/* Banner Logo */
+
+.bannerLogo {
+  max-width: 100%;
+  /*max-height: 350px;*/
+  /* Comment out to extend banner to edge of browser window */
+}
+
+/* Footer Logo */
+
+.footerLogo {
+  max-width: 100%;
+  max-height: 100px;
+}
+
+/* Alters image size on main product page - overrides same class in bootstrap-451.css */
+
+.product-image-large {
+  margin: 0 auto;
+  max-height: 400px;
+  max-width: 100%;
+}
+
+/* Home message text bullets */
+
+.homeMessageBullets ul li {
+  list-style-type: disc;
+  /*margin-left: 60px;*/
+}
+
+/*.HomeMessage {
+  text-align: center;
+  font-size: 14pt;
+  font-style: bold;
+  color: #063B6D !important;
+}
+.HomeMessageFont2 {
+  font-size: 10pt;
+}
+.HomeMessageFont3 {
+  font-size: 13pt;
+}
+.HomeMessageFont4 {
+  font-size: 6pt;
+}*/
+
+/* Theme CSS Edits */
+
+/* Navbar Color - Update This */
+
+.navbar-default {
+  background-color: #72123d;
+}
+
+/* Highlight Colors - Update These */
+
+.container .navbar-nav li.active a:hover {
+  background-color: #ffffff;
+}
+
+.container .navbar-nav li.active a:focus {
+  background-color: #ffffff;
+}
+
+.navbar-default .navbar-nav .open>a {
+  background-color: #ffffff;
+}
+
+.navbar-default .navbar-nav .open>a:hover {
+  background-color: #ffffff;
+}
+
+.navbar-default .navbar-nav .open>a:focus {
+  background-color: #ffffff;
+}
+
+.navbar-nav li.dropdown li>a:hover {
+  background-color: #72123d;
+}
+
+.navbar-nav li.dropdown li>a:focus {
+  background-color: #ffffff;
+}
+
+.navbar .container .navbar-nav li.active .fa-caret-down {
+  color: #ffffff;
+}
+
+.container .navbar-nav li.active>a {
+  background-color: #ffffff;
+}
+
+/* End match color here */
+
+/* Change Panel Heading Color */
+
+.panel-primary .panel-heading .panel-title {
+  background-color: #72123d;
+}
+
+/* Change Panel Heading Font Color */
+
+.panel-primary .panel-heading .panel-title {
+  color: #ffffff;
+}
+
+/* Navbar text when highlighted */
+
+.container .navbar-nav li.active a:hover, .container .navbar-nav li.active>a, .container .navbar-nav li.active a:focus, .navbar-default .navbar-nav .open>a:focus {
+  color: #72123d;
+}
+
+/* Navbar Default Font Color */
+
+.navbar-default .navbar-nav .open>a:hover, .navbar-default .navbar-nav .open>a {
+  color: #72123d;
+}
+
+/* Drop down font color */
+
+.navbar-nav li.dropdown li>a:hover {
+  color: #ffffff;
+}

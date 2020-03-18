@@ -1,0 +1,19 @@
+<section class="jumbotron" ng-class="{'active': isActive('catalog')}" ng-show="user.Company.LogoUrl">
+    <customcarousel></customcarousel>
+    <div class="container">
+        <div class="row jumboHeaderText"> <!-- pull-left if left allignment wanted again-->
+            <div ng-show="Four51User.isAuthenticated()">
+                <a ng-click="refreshUser()" href="catalog">
+                    <!-- Insert image file here -->
+                    <img src="images/uw-transplant/uw-50-banner-150.png" width="100%" alt="Hope, meet gratitude. Celebrate 50 years of courage in transplant and organ donation."/>
+                </a>
+                <h2 class="thumbnail">
+                    <!-- <span class="jumboHeaderText">
+                    {{user.Company.Name}}
+                </span> -->
+                </h2>
+                <homemessage />
+            </div>
+        </div>
+    </div>
+</section>

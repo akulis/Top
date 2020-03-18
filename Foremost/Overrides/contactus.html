@@ -1,0 +1,22 @@
+<section>
+  <accountnavigation ng-show="user.Permissions.contains('ViewSelfAdmin') || user.Type == 'Customer'" />
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title panel-primary">{{('Help' | r) | xlat }}</h3>
+    </div>
+    <div class="panel-body contactUsList" style="font-family:sans-serif">
+      <h3>To Place an Order</h3>
+      <p>To order merchandise, add selected items and quantities to your shopping card and proceed through the checkout process.</p>
+      <p>All items are non-stock and are produced twice per month.</p>
+      <p>Orders placed between the 1st and 15th of each month will ship around the 1st business day of the next month.</p>
+      <p>Orders placed between the 16th and end of the month will ship around the 15th of the next month.</p>
+      <h3>Returns</h3>
+      <p>All of the items featured on this site are made-to-order just for you, so we appreciate your understanding that returns and exchanges are not accepted except in the case of defective product.</p>
+      <h3>Questions?</h3>
+      <p>Contact Customer Service at <a href="mailto:webservices@toppromotions.com?subject=Foremost%20Webstore%20Customer%20Service%20Question">webservices@toppromotions.com</a> or 608-826-6990, if you have a question about your order, please have your order # available.</p>
+      <p>View our <a href="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/docs/Terms.pdf" target="_blank">Terms & Conditions</a>.</p>
+    </div>
+    <div class="panel-footer">
+    </div>
+  </div>
+</section>

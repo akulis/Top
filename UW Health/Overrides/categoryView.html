@@ -1,0 +1,83 @@
+<section>
+  <!-- Edit Announcement Here -->
+  <!--
+    <br />
+    <div class="panel panel-primary">
+		<div class="panel-heading">
+		  <h2 class="panel-title panel-primary">
+		    {{'Announcement' | r | xlat}}
+		  </h2>
+		</div>
+		<div class="panel-body">
+		  <h4 class="textCenter">.....will be closed Friday, March 25th, in observance of ...... ..... wishes you and your family a safe and Happy Holiday weekend.</h4>
+		</div>
+	</div>
+    <br />
+    -->
+  <!-- End Announcement -->
+  <nav id="451qa_nav_hdr" class="nav">
+    <ul>
+      <li class="hidden-sm hidden-xs">
+        <span ng-click="toggleNav()"><i class="fa fa-bars" ng-class="{ 'text-info': navStatus.visible }"></i></span>
+      </li>
+      <li>
+        <span id="451_lbl_curcat" class="text-primary" ng-bind-html="currentCategory.Name || '  {{'Categories' | r | xlat}}'"></span>
+      </li>
+      <li class="customSearchBar">
+        <productsearchinput></productsearchinput>
+        <!-- <a href="search">
+                    <span><i class="fa fa-search text-primary"></i></span>
+                </a> -->
+      </li>
+    </ul>
+  </nav>
+  <div class="row">
+    <aside class="col-md-3 visible-md visible-lg" ng-if="navStatus.visible">
+      <div class="panel panel-default panel-nav">
+        <div class="panel-heading">
+          <h3 class="panel-title">
+            {{'Category List' | r | xlat}}
+          </h3>
+        </div>
+        <nav class="nav 451qa_sidenav panel-body">
+          <ul>
+            <categorycollapse tree='tree' current='currentCategory'></categorycollapse>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <div ng-class="{ 'col-md-9': navStatus.visible, 'col-md-12': !navStatus.visible }">
+      <!-- Category Message -->
+      <br />
+      <div class="categoryPanel" ng-show="(currentCategory.Name === {{'Categories' | r | xlat}})">
+        <h4>UW Health is happy to offer branded merchandise to our employees as well as lab coats to our faculty and staff.</h4>
+        <h3><strong>Please Note: You will start to see the new UW Health logos on apparel in the coming weeks.</strong></h3>
+        <h4>We now have Under Armour! Select Merchandise and your brand to find your UA Category!</h4>
+        <p>Please visit the product links to see what is available.</p>
+      </div>
+      <br />
+      <!-- End Message -->
+      <categorylistview></categorylistview>
+      <loadingindicator ng-show="productLoadingIndicator" title="{{'Please wait while we fetch all products' | r | xlat}}" />
+      <!-- Category Message -->
+      <br />
+      <div class="categoryPanel" ng-show="(currentCategory.Name === {{'Categories' | r | xlat}})">
+        <p>
+          Apparel Orders placed between the 6th and 20th will be shipped by the 10th of the following month. Apparel Orders placed between the 21st and the 5th will be shipped by the 25th of that month. Labcoat Orders will be processed within 10
+          working days of when the order is approved.
+        </p>
+        <p>
+          Periodically new product will be added. Please send suggestions to Dawn Davis. All suggestions will be considered but we cannot guarantee every product will be chosen. If you are looking to add a department that is currently not offered,
+          please contact Dawn Davis at <a href="mailto:ddavis2@uwhealth.org?subject=UW%20Health%20Webstore%20Contact">ddavis2@uwhealth.org</a>.
+        </p>
+        <p class="small">
+          We make every effort to ship product by the dates listed within each ordering window, but if a product is on back order with the supplier, availability and ship dates may be adjusted. You will be notified if this occurs. We apologize for
+          any inconvenience this may cause.
+        </p>
+      </div>
+      <br>
+      <!-- End Message -->
+      <productlistview></productlistview>
+    </div>
+  </div>
+</section>
