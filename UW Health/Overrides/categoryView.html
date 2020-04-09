@@ -1,7 +1,6 @@
 <section>
   <!-- Edit Announcement Here -->
-  <!--
-    <br />
+  <!-- <br />
     <div class="panel panel-primary">
 		<div class="panel-heading">
 		  <h2 class="panel-title panel-primary">
@@ -9,11 +8,27 @@
 		  </h2>
 		</div>
 		<div class="panel-body">
-		  <h4 class="textCenter">.....will be closed Friday, March 25th, in observance of ...... ..... wishes you and your family a safe and Happy Holiday weekend.</h4>
+		  <h4 class="centerText">.....will be closed Friday, March 25th, in observance of ...... ..... wishes you and your family a safe and Happy Holiday weekend.</h4>
 		</div>
 	</div>
-    <br />
-    -->
+    <br /> -->
+  <!-- COVID-19 Message -->
+  <div class="panel panel-primary">
+    <div class="alert-message">
+      <h2 class="panel-title panel-primary">
+        {{'Update Regarding COVID-19' | r | xlat}}
+      </h2>
+    </div>
+    <div class="panel-body">
+      <h4 class="centerText">
+        <strong>
+          <p>Due to the unprecedented impact COVID-19 is having on UW Health, we are asking that any merchandise purchases, beyond those critical for operational purposes, be delayed until normal business operations and funds flow resume.</p>
+          <p>If you are unsure whether or not this temporary hold applies to your order, please feel free to reach out to Dawn Davis at 265-1605 or <a href="mailto:ddavis2@uwhealth.org?subject=Web%20Order%20Inquiry">ddavis2@uwhealth.org</a>.</p>
+          <p>We appreciate your support and look forward to resuming full operations in the future.</p>
+        </strong>
+      </h4>
+    </div>
+  </div>
   <!-- End Announcement -->
   <nav id="451qa_nav_hdr" class="nav">
     <ul>
@@ -50,9 +65,10 @@
       <!-- Category Message -->
       <br />
       <div class="categoryPanel" ng-show="(currentCategory.Name === {{'Categories' | r | xlat}})">
+        <h4><strong>PLEASE NOTE: Due to COVID-19 and vendor closures, you may see a delay in fullfillment of orders.</strong></h4>
+        <br>
         <h4>UW Health is happy to offer branded merchandise to our employees as well as lab coats to our faculty and staff.</h4>
-        <h3><strong>Please Note: You will start to see the new UW Health logos on apparel in the coming weeks.</strong></h3>
-        <h4>We now have Under Armour! Select Merchandise and your brand to find your UA Category!</h4>
+        <h4>We have Under Armour! Select Merchandise and your brand to find your UA Category!</h4>
         <p>Please visit the product links to see what is available.</p>
       </div>
       <br />
@@ -71,6 +87,7 @@
           please contact Dawn Davis at <a href="mailto:ddavis2@uwhealth.org?subject=UW%20Health%20Webstore%20Contact">ddavis2@uwhealth.org</a>.
         </p>
         <p class="small">
+          These items are made to order just for you so we appreciate your understanding that returns and exchanges are not accepted except in the case of defective product.
           We make every effort to ship product by the dates listed within each ordering window, but if a product is on back order with the supplier, availability and ship dates may be adjusted. You will be notified if this occurs. We apologize for
           any inconvenience this may cause.
         </p>
