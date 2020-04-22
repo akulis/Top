@@ -1,58 +1,61 @@
 <section>
-  <nav id="451qa_nav_hdr" class="nav">
-    <ul>
-      <li class="hidden-sm hidden-xs">
-        <span ng-click="toggleNav()"><i class="fa fa-bars" ng-class="{ 'text-info': navStatus.visible }"></i></span>
-      </li>
-      <li>
-        <span id="451_lbl_curcat" class="text-primary" ng-bind-html="currentCategory.Name || '  {{'Categories' | r | xlat}}'"></span>
-      </li>
-      <li class="pull-right">
-        <a href="search">
-          <span><i class="fa fa-search text-primary"></i></span>
-        </a>
-      </li>
-    </ul>
-  </nav>
-  <div class="row">
-    <aside class="col-md-3 visible-md visible-lg" ng-if="navStatus.visible">
-      <div class="panel panel-default panel-nav">
-        <div class="panel-heading">
-          <h3 class="panel-title">
-            {{'Category List' | r | xlat}}
-          </h3>
-        </div>
-        <nav class="nav 451qa_sidenav panel-body">
-          <ul>
-            <categorytree tree='tree' current='currentCategory' />
-          </ul>
-        </nav>
-      </div>
-    </aside>
-    <div ng-class="{ 'col-md-9': navStatus.visible, 'col-md-12': !navStatus.visible }">
-      <!-- Edit Announcement Here -->
+    <nav id="451qa_nav_hdr" class="nav">
+        <ul>
+            <li class="hidden-sm hidden-xs">
+                <span ng-click="toggleNav()"><i class="fa fa-bars" ng-class="{ 'text-info': navStatus.visible }"></i></span>
+            </li>
+            <li>
+                <span id="451_lbl_curcat" class="text-primary" ng-bind-html="currentCategory.Name || '  {{'Categories' | r | xlat}}'"></span>
+            </li>
+            <li class="pull-right">
+                <a href="search">
+                    <span><i class="fa fa-search text-primary"></i></span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="row">
+        <aside class="col-md-3 visible-md visible-lg" ng-if="navStatus.visible">
+            <div class="panel panel-default panel-nav">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        {{'Category List' | r | xlat}}
+                    </h3>
+                </div>
+                <nav class="nav 451qa_sidenav panel-body">
+                    <ul>
+                        <categorytree tree='tree' current='currentCategory' />
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <div ng-class="{ 'col-md-9': navStatus.visible, 'col-md-12': !navStatus.visible }" >
+         <!-- Edit Announcement Here -->
+  <br>
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2 class="panel-title panel-primary">{{'Announcement' | r | xlat}}</h2>
+    </div>
+    <div class="panel-body">
+      <h4><strong>To Our Valued Customers,</h4>
+        <h4><strong>The impact of Covid-19 has been far reaching and has touched all of us in some way.  Our lives, and those of our co-workers, families, communities and customers, have changed dramatically in the course of a few weeks and in ways we could have never imagined.  As we move forward, we keep those who suffered loss in our hearts and minds. Please know we are here for you and you are all in our thoughts.</h4>
       <br>
-      <div class="panel panel-primary">
-        <div class="panel-heading">
-          <h2 class="panel-title panel-primary">{{'Announcement' | r | xlat}}</h2>
-        </div>
-        <div class="panel-body">
-          <h4 class="text-center">Expedited shipping requests do not impact order processing time, if you need an order processed faster than the standard time frame please contact customer service and we will try to accommodate your request .</h4>
-          <h4 class="text-center">Shipping will be via UPS ground service or USPS ground service and will be billed accordingly per PO or Credit Card Orders.</h4> <br>
-          <br>
-          <h4>Top Promotions will continue to make every effort to keep costs low but due to increases in tariffs on product inbound into the USA, it is possible that pricing will need to be adjusted accordingly. Pricing is subject to change without
-            notice.</h4>
-        </div>
-      </div>
       <br>
-      <!-- End Announcement -->
-
-      <categorylistview></categorylistview>
-
-      <loadingindicator ng-show="productLoadingIndicator" title="{{'Please wait while we fetch all products' | r | xlat}}" />
-
-      <productlistview></productlistview>
-
+      <h4 class="text-center">Expedited shipping requests do not impact order processing time, if you need an order processed faster than the standard time frame please contact customer service and we will try to accommodate your request .</h4>
+      <h4 class="text-center">Shipping will be via UPS ground service or USPS ground service and will be billed accordingly per PO or Credit Card Orders.</h4>  <br>
+      <br>
+      <h4>Top Promotions will continue to make every effort to keep costs low but due to increases in tariffs on product inbound into the USA, it is possible that pricing will need to be adjusted accordingly.  Pricing is subject to change without notice.</h4>
     </div>
   </div>
+  <br>
+  <!-- End Announcement -->
+
+            <categorylistview></categorylistview>
+
+            <loadingindicator ng-show="productLoadingIndicator" title="{{'Please wait while we fetch all products' | r | xlat}}"/>
+
+            <productlistview></productlistview>
+
+        </div>
+    </div>
 </section>
