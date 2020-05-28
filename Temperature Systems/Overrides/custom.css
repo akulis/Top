@@ -1,5 +1,15 @@
-/* Login Logo */
+.checkout-billing-buttons {
+  font-size: 18pt;
+  font-weight: bolder;
+}
 
+.checkout-billing-directions {
+  color: #ed1b2e;
+  font-weight: bolder;
+  font-size: 20pt;
+}
+
+/* Login Logo */
 .loginLogo {
   max-width: 100%;
   max-height: 60px;
@@ -9,7 +19,6 @@
 }
 
 /* Jumbo Header Text */
-
 .jumboHeaderText {
   padding-top: 20px;
   width: 600px;
@@ -18,34 +27,29 @@
 }
 
 /* Jumbotron settings */
-
 .jumbotron {
   background-color: #FFFFFF;
 }
 
 /* Navbar Logo */
-
 .navLogo {
   max-width: 100%;
   max-height: 40px;
 }
 
 /* Banner Logo */
-
 .bannerLogo {
   max-width: 100%;
   max-height: 250px;
 }
 
 /* Footer Logo */
-
 .footerLogo {
   max-width: 100%;
   max-height: 100px;
 }
 
 /* Alters image size on main product page - overrides same class in bootstrap-451.css */
-
 .product-image-large {
   margin: 0 auto;
   max-height: 400px;
@@ -53,7 +57,6 @@
 }
 
 /* Home message text bullets */
-
 .homeMessageBullets ul li {
   list-style-type: disc;
 }
@@ -73,17 +76,13 @@
 .HomeMessageFont4 {
   font-size: 6pt;
 }*/
-
 /* Theme CSS Edits */
-
 /* Navbar Color - Update This */
-
 .navbar-default {
   background-color: #ed1b2e;
 }
 
 /* Highlight Colors - Update These */
-
 .container .navbar-nav li.active a:hover {
   background-color: #000000;
 }
@@ -121,33 +120,27 @@
 }
 
 /* End match color here */
-
 /* Change Panel Heading Color */
-
 .panel-primary .panel-heading .panel-title {
   background-color: #000000;
 }
 
 /* Change Panel Heading Font Color */
-
 .panel-primary .panel-heading .panel-title {
   color: #ffffff;
 }
 
 /* Navbar text when highlighted */
-
 .container .navbar-nav li.active a:hover, .container .navbar-nav li.active>a, .container .navbar-nav li.active a:focus, .navbar-default .navbar-nav .open>a:focus {
   color: #ffffff;
 }
 
 /* Navbar Default Font Color */
-
 .navbar-default .navbar-nav .open>a:hover, .navbar-default .navbar-nav .open>a {
   color: #ffffff;
 }
 
 /* Drop down font color */
-
 .navbar-nav li.dropdown li>a:hover {
   color: #ffffff;
 }
