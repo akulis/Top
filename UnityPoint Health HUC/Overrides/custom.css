@@ -9,15 +9,30 @@
 
 /* Jumbo Header Text */
 .jumboHeaderText {
-  padding-top: 20px;
-  width: 600px;
-  margin: 0 auto;
+  text-align: center;
+  /*vertical-align: middle;*/
+  /*padding-top: 20px;*/
   color: #ffffff;
+  /* Change banner color */
+  /*position: relative;
+    top: 50%;
+    transform: translateY(-50%);*/
 }
 
 /* Jumbotron settings */
-.jumbotron {
+/* .jumbotron {
   background-color: #000000;
+} */
+.container .jumbotron, .container-view .jumbotron {
+  border-radius: 0px;
+}
+
+.jumbotron .row {
+  color: #ffffff;
+}
+
+.jumbotron {
+  padding: 0px;
 }
 
 /* Navbar Logo */
@@ -29,7 +44,7 @@
 /* Banner Logo */
 .bannerLogo {
   max-width: 100%;
-  max-height: 250px;
+  /* max-height: 250px; */
 }
 
 /* Footer Logo */
