@@ -13,13 +13,15 @@
           <!-- This icon is for the wider screen -->
           <li id="" class="back animated fadeInLeft hidden-xs">
             <a id="451qa_home_link" class="" style="padding: 10px 10px 0px 10px; text-align: center;" href="catalog" ng-show="Four51User.isAuthenticated()">
-              <img class="image-responsive navLogo" ng-src="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/Frank-Beverage/images/Frank-Logo-Wht@0.5x-8.png" src="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/Frank-Beverage/images/Frank-Logo-Wht@0.5x-8.png">
+              <img class="image-responsive navLogo" ng-src="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/Frank-Beverage/images/Frank-Beverage-100.png"
+                src="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/Frank-Beverage/images/Frank-Beverage-100.png">
             </a>
           </li>
           <!-- This icon is for the slimmer screen -->
           <li id="" class="back animated fadeInLeft hidden-sm hidden-md hidden-lg">
             <a id="451qa_home_link" class="" style="padding: 10px 10px 0px 10px; text-align: center;" href="catalog" ng-show="Four51User.isAuthenticated()">
-              <img class="image-responsive navLogo" ng-src="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/Frank-Beverage/images/Frank-Logo-Wht@0.5x-8.png" src="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/Frank-Beverage/images/Frank-Logo-Wht@0.5x-8.png">
+              <img class="image-responsive navLogo" ng-src="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/Frank-Beverage/images/Frank-Beverage-100.png"
+                src="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/Frank-Beverage/images/Frank-Beverage-100.png">
             </a>
           </li>
           <!-- Programs Button -->
@@ -113,7 +115,7 @@
               </li>
               <li class="divider" ng-show="user.Type!='TempCustomer' || AppConst.debug"></li>
               <li ng-show="user.Type!='TempCustomer'" class="logout">
-                <a href="#"  class="451_btn_logout" ng-click="Logout()">
+                <a href="#" class="451_btn_logout" ng-click="Logout()">
                   <i class="fa fa-power-off text-danger"></i>
                   <span>{{'Log Out' | r | xlat}}</span>
                 </a>
@@ -202,7 +204,7 @@
     <a class="dropdown-toggle text-center" data-toggle="dropdown">
       <i class="fa fa-angle-down text-primary"></i>
     </a>
-    <ul class="451qa_topnav dropdown-menu" >
+    <ul class="451qa_topnav dropdown-menu">
       <categorytree tree='tree' current='currentCategory' />
     </ul>
   </nav>
