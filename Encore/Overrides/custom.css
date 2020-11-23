@@ -88,50 +88,50 @@
 
 /* Highlight Colors - Update These */
 .container .navbar-nav li.active a:hover {
-  background-color: #03a6df;
+  background-color: #47292b;
 }
 
 .container .navbar-nav li.active a:focus {
-  background-color: #03a6df;
+  background-color: #47292b;
 }
 
 .navbar-default .navbar-nav .open>a {
-  background-color: #03a6df;
+  background-color: #47292b;
 }
 
 .navbar-default .navbar-nav .open>a:hover {
-  background-color: #03a6df;
+  background-color: #47292b;
 }
 
 .navbar-default .navbar-nav .open>a:focus {
-  background-color: #03a6df;
+  background-color: #47292b;
 }
 
 .navbar-nav li.dropdown li>a:hover {
-  background-color: #03a6df;
+  background-color: #47292b;
 }
 
 .navbar-nav li.dropdown li>a:focus {
-  background-color: #03a6df;
+  background-color: #47292b;
 }
 
 .navbar .container .navbar-nav li.active .fa-caret-down {
-  color: #03a6df;
+  color: #47292b;
 }
 
 .container .navbar-nav li.active>a {
-  background-color: #03a6df;
+  background-color: #47292b;
 }
 
 /* End match color here */
 /* Change Panel Heading Color */
 .panel-primary .panel-heading .panel-title {
-  background-color: #03a6df;
+  background-color: #47292b;
 }
 
 /* Change Panel Heading Font Color */
 .panel-primary .panel-heading .panel-title {
-  color: #000000;
+  color: #47292b;
 }
 
 /* Navbar text when highlighted */
@@ -146,7 +146,7 @@
 
 /* Changes font color when not in use */
 .container .navbar-nav li a, .container .navbar-nav li a:hover {
-  color: #000000;
+  color: #47292b;
 }
 
 /* Drop down font color */
@@ -155,7 +155,7 @@
 }
 
 .badge {
-  color: #000000;
+  color: #47292b;
 }
 
 .badge {
@@ -163,19 +163,19 @@
 }
 
 .shoppingCartIndicator ul li a {
-  color: #000000;
+  color: #47292b;
 }
 
 /* Spending Account Nav Option */
 .spendingaccounts {
   padding: 15px 8px;
-  color: #000000;
+  color: #47292b;
   font-size: 75%;
 }
 
 .spendingaccounts-xs {
   padding: 18px 0px 0px 0px;
-  color: #000000;
+  color: #47292b;
   font-size: 1.7vmin;
 }
 
