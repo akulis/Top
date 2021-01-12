@@ -1,0 +1,188 @@
+/* Login Logo */
+.loginLogo {
+  max-width: 100%;
+  max-height: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 15px;
+}
+
+/* Jumbo Header Text */
+.jumboHeaderText {
+  text-align: center;
+  /*vertical-align: middle;*/
+  /*padding-top: 20px;*/
+  color: #ffffff;
+  /* Change banner color */
+  /*position: relative;
+    top: 50%;
+    transform: translateY(-50%);*/
+}
+
+/* Jumbotron settings */
+/* .jumbotron {
+  background-color: #000000;
+} */
+.container .jumbotron, .container-view .jumbotron {
+  border-radius: 0px;
+}
+
+.jumbotron .row {
+  color: #ffffff;
+}
+
+.jumbotron {
+  padding: 0px;
+}
+
+/* Navbar Logo */
+.navLogo {
+  max-width: 100%;
+  max-height: 47px;
+}
+
+/* Banner Logo */
+.bannerLogo {
+  max-width: 100%;
+  /* max-height: 250px; */
+}
+
+/* Footer Logo */
+.footerLogo {
+  max-width: 100%;
+  max-height: 100px;
+}
+
+/* Alters image size on main product page - overrides same class in bootstrap-451.css */
+.product-image-large {
+  margin: 0 auto;
+  max-height: 400px;
+  max-width: 100%;
+}
+
+/* Home message text bullets */
+.homeMessageBullets ul li {
+  list-style-type: disc;
+}
+
+/*.HomeMessage {
+  text-align: center;
+  font-size: 14pt;
+  font-style: bold;
+  color: #063B6D !important;
+}
+.HomeMessageFont2 {
+  font-size: 10pt;
+}
+.HomeMessageFont3 {
+  font-size: 13pt;
+}
+.HomeMessageFont4 {
+  font-size: 6pt;
+}*/
+/* Theme CSS Edits */
+/* Navbar Color - Update This */
+.navbar-default {
+  background-color: #f5f5f5;
+}
+
+/* Highlight Colors - Update These */
+.container .navbar-nav li.active a:hover {
+  background-color: #25337a;
+}
+
+.container .navbar-nav li.active a:focus {
+  background-color: #25337a;
+}
+
+.navbar-default .navbar-nav .open>a {
+  background-color: #25337a;
+}
+
+.navbar-default .navbar-nav .open>a:hover {
+  background-color: #25337a;
+}
+
+.navbar-default .navbar-nav .open>a:focus {
+  background-color: #25337a;
+}
+
+.navbar-nav li.dropdown li>a:hover {
+  background-color: #25337a;
+}
+
+.navbar-nav li.dropdown li>a:focus {
+  background-color: #25337a;
+}
+
+.navbar .container .navbar-nav li.active .fa-caret-down {
+  color: #25337a;
+}
+
+.container .navbar-nav li.active>a {
+  background-color: #25337a;
+}
+
+/* End match color here */
+/* Change Panel Heading Color */
+.panel-primary .panel-heading .panel-title {
+  background-color: #25337a;
+}
+
+/* Change Panel Heading Font Color */
+.panel-primary .panel-heading .panel-title {
+  color: #25337a;
+}
+
+/* Navbar text when highlighted */
+.container .navbar-nav li.active a:hover, .container .navbar-nav li.active>a, .container .navbar-nav li.active a:focus, .navbar-default .navbar-nav .open>a:focus {
+  color: #ffffff;
+}
+
+/* Navbar Default Font Color */
+.navbar-default .navbar-nav .open>a:hover, .navbar-default .navbar-nav .open>a {
+  color: #ffffff;
+}
+
+/* Changes font color when not in use */
+.container .navbar-nav li a, .container .navbar-nav li a:hover {
+  color: #25337a;
+}
+
+/* Drop down font color */
+.navbar-nav li.dropdown li>a:hover {
+  color: #ffffff;
+}
+
+.badge {
+  color: #25337a;
+}
+
+.badge {
+  background-color: undefined;
+}
+
+.shoppingCartIndicator ul li a {
+  color: #25337a;
+}
+
+/* Spending Account Nav Option */
+.spendingaccounts {
+  padding: 15px 8px;
+  color: #25337a;
+  font-size: 75%;
+}
+
+.spendingaccounts-xs {
+  padding: 18px 0px 0px 0px;
+  color: #25337a;
+  font-size: 1.7vmin;
+}
+
+.dropdown-mega, .navbar-default {
+  border-color: ;
+}
+
+.text-primary {
+  color: #000000;
+}
