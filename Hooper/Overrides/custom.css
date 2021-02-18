@@ -126,6 +126,12 @@
   color: #000000;
 }
 
+/* Navbar Left / Back Arrow */
+.navbar .container .navbar-nav.pull-left li.fadeInLeft a i,
+.navbar .container-view .navbar-nav.pull-left li.fadeInLeft a i {
+  color: #000000;
+}
+
 /* Navbar text when highlighted */
 .container .navbar-nav li.active a:hover, .container .navbar-nav li.active>a, .container .navbar-nav li.active a:focus, .navbar-default .navbar-nav .open>a:focus {
   color: #000000;

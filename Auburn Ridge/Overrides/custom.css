@@ -123,6 +123,12 @@
   background-color: #614b3e;
 }
 
+/* Navbar Left / Back Arrow */
+.navbar .container .navbar-nav.pull-left li.fadeInLeft a i,
+.navbar .container-view .navbar-nav.pull-left li.fadeInLeft a i {
+  color: #614b3e;
+}
+
 /* End match color here */
 /* Change Panel Heading Color */
 .panel-primary .panel-heading .panel-title {
