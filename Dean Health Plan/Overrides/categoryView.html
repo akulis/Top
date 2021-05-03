@@ -29,6 +29,20 @@
   </div>
   <br> -->
   <!-- End Selective Category Heading -->
+  <!-- Custom Store Banners -->
+  <!-- Dean Health Plan -->
+  <div class="jumboHeader" ng-show="(currentCategory.Name == 'Dean Health Plan')">
+    <img class="bannerLogo" src="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/Dean-Health-Plan/images/DHP-Sub-Category-Banner-2000.jpg" alt="Welcome to the Dean Health Plan Webstore" />
+  </div>
+  <!-- Prevea360 -->
+  <div class="jumboHeader" ng-show="(currentCategory.Name == 'Prevea360')">
+    <img class="bannerLogo" src="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/Dean-Health-Plan/images/P360-Sub-Category-Banner-2000.jpg" alt="Welcome to the Prevea360 Webstore" />
+  </div>
+  <!-- WellFirst Health -->
+  <div class="jumboHeader" ng-show="(currentCategory.Name == 'WellFirst Health')">
+    <img class="bannerLogo" src="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/Dean-Health-Plan/images/WFH-Sub-Category-Banner-2000.jpg" alt="Welcome to the WellFirst Health Webstore" />
+  </div>
+  <!-- End Custom Store Banners -->
   <nav id="451qa_nav_hdr" class="nav">
     <ul>
       <li class="hidden-sm hidden-xs">
@@ -37,12 +51,12 @@
       <li>
         <span id="451_lbl_curcat" class="text-primary" ng-bind-html="currentCategory.Name || '  {{'Categories' | r | xlat}}'"></span>
       </li>
-      <li class="customSearchBar">
-        <productsearchinput></productsearchinput>
-        <!-- <a href="search">
+      <!-- <li class="customSearchBar">
+        <productsearchinput></productsearchinput> -->
+      <!-- <a href="search">
           <span><i class="fa fa-search text-primary"></i></span>
         </a> -->
-      </li>
+      <!-- </li> -->
     </ul>
   </nav>
   <div class="row">
@@ -73,8 +87,10 @@
       <br>
       <div class="categoryPanel" ng-show="(currentCategory.Name === {{'Categories' | r | xlat}})">
         <ul>
-          <li>Apparel Orders placed between the XXX and XXX will be shipped by XXX</li>
-          <li>Each item is custom made for your order so we appreciate your understanding that returns/exchanges are not available except in the case of an item defect</li>
+          <li>Apparel Orders placed between the 17th and the 1st will ship on the 19th.</li>
+          <li>Apparel Orders placed between the 2nd and the 16th will ship on the 4th.</li>
+          <li>Please contact Josh Zych at jzych@toppromotions.com for custom options.</li>
+          <li>Each item is custom made for your order so we appreciate your understanding that returns/exchanges are not available except in the case of an item defect.</li>
         </ul>
       </div>
       <br>
