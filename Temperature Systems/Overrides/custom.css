@@ -4,7 +4,7 @@
 }
 
 .checkout-billing-directions {
-  color: #ed1b2e;
+  color: #c32033;
   font-weight: bolder;
   font-size: 20pt;
 }
@@ -79,7 +79,7 @@
 /* Theme CSS Edits */
 /* Navbar Color - Update This */
 .navbar-default {
-  background-color: #ed1b2e;
+  background-color: #c32033;
 }
 
 /* Highlight Colors - Update These */
