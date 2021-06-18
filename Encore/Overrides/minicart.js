@@ -3,7 +3,12 @@ angular.module('OrderCloud-Minicart', []);
 angular.module('OrderCloud-Minicart').directive('minicart', minicart).controller('minicartCtrl', minicartCtrl);
 
 function minicart() {
-  return {restrict: 'E', transclude: true, template: template, controller: 'minicartCtrl'};
+  return {
+    restrict: 'E',
+    transclude: true,
+    template: template,
+    controller: 'minicartCtrl'
+  };
 
   function template() {
     return [
@@ -34,7 +39,7 @@ function minicart() {
       '    <div class="minicart">',
       '        <i class="fa fa-shopping-cart"></i> <span class="label label-default hidden-xs">{{cartCount + \' ITEM(S)\'}}</span> <span class="hidden-xs"> - {{currentOrder.Total | currency }}</span> <i class="fa fa-caret-down text-mutedCaretDown"></i>',
       '        <div class="minicart-detail">',
-      '            <i cla47292bss="fa fa-caret-up fa-2x"></i>',
+      '            <i class="fa fa-caret-up fa-2x"></i>',
       '            <ul>',
       '                <li ng-repeat="lineitem in currentOrder.LineItems | limitTo: 5" ng-hide="lineitem.Kit">',
       '                    <div class="row" ng-class="{\'top-item\':$index == 0}">',
@@ -103,6 +108,7 @@ function minicart() {
 }
 
 minicartCtrl.$inject = ['$scope', '$location', 'Order', 'OrderConfig', 'User'];
+
 function minicartCtrl($scope, $location, Order, OrderConfig, User) {
 
   $scope.removeItem = function(item, override) {
@@ -127,14 +133,14 @@ function minicartCtrl($scope, $location, Order, OrderConfig, User) {
 
   $scope.cartCheckOut = function() {
     $scope.displayLoadingIndicator = true;
-    if (!$scope.isEditforApproval) 
+    if (!$scope.isEditforApproval)
       OrderConfig.address($scope.currentOrder, $scope.user);
     Order.save($scope.currentOrder, function(data) {
       $scope.currentOrder = data;
       $location.path(
-        $scope.isEditforApproval
-        ? 'checkout/' + $routeParams.id
-        : 'checkout');
+        $scope.isEditforApproval ?
+        'checkout/' + $routeParams.id :
+        'checkout');
       $scope.displayLoadingIndicator = false;
     }, function(ex) {
       $scope.errorMessage = ex.Message;
@@ -143,10 +149,10 @@ function minicartCtrl($scope, $location, Order, OrderConfig, User) {
   };
 
   $scope.$on('event:orderUpdate', function(event, order) {
-    $scope.currentOrder = order
-      ? (order.Status === 'Unsubmitted')
-        ? order
-        : null
-      : null;
+    $scope.currentOrder = order ?
+      (order.Status === 'Unsubmitted') ?
+      order :
+      null :
+      null;
   })
 }

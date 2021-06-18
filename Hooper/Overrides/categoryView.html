@@ -60,12 +60,13 @@
     </aside>
     <div ng-class="{ 'col-md-9': navStatus.visible, 'col-md-12': !navStatus.visible }">
       <!-- Above Category Message -->
-      <!-- <br>
+      <br>
       <div class="categoryPanel text-center" ng-show="(currentCategory.Name === {{'Categories' | r | xlat}})">
-        <h2 class="colorBlack"><strong>Welcome to the Foremost Webstore!</strong></h2>
-        <h4>Your resource for high quality apparel</h4>
+        <h2 class="colorRed"><strong>Orders will be processed once per month. Orders placed through midnight on the 10th of the month will then ship on the 29th of the month.</strong></h2>
+        <li><strong>The Deadline for placing orders is Midnight, Friday, July 9th. Orders will ship on July 29th to our reginal offices in CO, MI, FL and OH.<strong></li>
+        <li><strong>Hooper employees may place orders directly from this website. GHAC employees may email AGriffin@hoopercorp.com your item number, size and color selection. Midnight, Friday July 9th is the deadline for these orders as well.<strong></li>
       </div>
-      <br> -->
+      <br>
       <!-- End Message -->
       <categorylistview></categorylistview>
       <loadingindicator ng-show="productLoadingIndicator" title="{{'Please wait while we fetch all products' | r | xlat}}" />
@@ -73,14 +74,15 @@
       <br>
       <div class="categoryPanel" ng-show="(currentCategory.Name === {{'Categories' | r | xlat}})">
         <ul>
-          <li class=font-size-14><strong>Apparel Orders placed by midnight February 21st will be shipped March 20, 2020</strong></li>
-          <li>Each item is custom made for your order so we appreciate your understanding that
+          <!--<li class=font-size-14><strong>Apparel Orders placed by midnight February 21st will be shipped March 20, 2020</strong></li>
+          --!>
+          <li class=font-size-16>Each item is custom made for your order so we appreciate your understanding that
             returns/exchanges are not available except in the case of an item defect</li>
         </ul>
       </div>
       <br>
       <!-- End Message -->
-      <productlistview></productlistview>
+          <productlistview></productlistview>
+      </div>
     </div>
-  </div>
 </section>
