@@ -192,3 +192,74 @@
 .text-primary {
   color: #000000;
 }
+
+
+/* THERMOMETER */
+body * {
+  font-family: 'Nunito', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+#countdown-wrap {
+  width: 100%;
+  height: 300px;
+  //border: 1px solid black;
+  font-family: Arial;
+  max-width: 650px;
+  margin: 10px auto 10px;
+}
+
+#goal {
+  font-size: 40px;
+  text-align: center;
+  color: #000000;
+
+  @media only screen and (max-width : 640px) {
+    text-align: center;
+  }
+}
+
+#glass {
+  width: 100%;
+  height: 50px;
+  background: #000000;
+  border-radius: 10px;
+  float: left;
+  overflow: hidden;
+}
+
+#progress {
+  float: left;
+  width: 16%;
+  height: 50px;
+  background: #FFCD00;
+  z-index: 333;
+  //border-radius: 5px;
+}
+
+.goal-stat {
+  font-size: 20px;
+  width: 30%;
+  //height: 20px;
+  padding: 1px;
+  float: left;
+  margin: 1;
+  color: #000000;
+
+  @media only screen and (max-width : 640px) {
+    width: 50%;
+    text-align: center;
+  }
+}
+
+.goal-number, .goal-label {
+  display: block;
+}
+
+.goal-number {
+  font-weight: bold;
+}

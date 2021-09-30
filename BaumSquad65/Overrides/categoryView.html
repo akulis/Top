@@ -60,12 +60,12 @@
     </aside>
     <div ng-class="{ 'col-md-9': navStatus.visible, 'col-md-12': !navStatus.visible }">
       <!-- Above Category Message -->
-      <!-- <br>
+      <br>
       <div class="categoryPanel text-center" ng-show="(currentCategory.Name === {{'Categories' | r | xlat}})">
-        <h2 class="colorBlack"><strong>Welcome to the Foremost Webstore!</strong></h2>
-        <h4>Your resource for high quality apparel</h4>
+        <h2 class="colorBlack"><strong>Welcome to the Baum Squad Webstore!</strong></h2>
+        <h4>We have raised XXXX amount of dollars towards our goal of YYYY. Thank you for your order!</h4>
       </div>
-      <br> -->
+      <br>
       <!-- End Message -->
       <categorylistview></categorylistview>
       <loadingindicator ng-show="productLoadingIndicator" title="{{'Please wait while we fetch all products' | r | xlat}}" />
@@ -83,3 +83,22 @@
     </div>
   </div>
 </section>
+<div id=countdown-wrap>
+  <div id="goal">Tyler's goal is to raise <b>$15,000</b> for the University of Iowa Stead Family Children's Hospital</div>
+  <div id="glass">
+    <div id="progress">
+    </div>
+  </div>
+  <div class="goal-stat">
+    <span class="goal-number">6%</span>
+    <span class="goal-label">of Goal</span>
+  </div>
+  <div class="goal-stat">
+    <span class="goal-number">$1,000</span>
+    <span class="goal-label">Raised</span>
+  </div>
+  <div class="goal-stat">
+    <span class="goal-number">15</span>
+    <span class="goal-label">Days to Go</span>
+  </div>
+</div>
