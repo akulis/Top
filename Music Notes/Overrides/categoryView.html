@@ -58,7 +58,7 @@
         </nav>
       </div>
     </aside>
-    <div ng-class="{ 'col-md-9': navStatus.visible, 'col-md-12': !navStatus.visible }" >
+    <div ng-class="{ 'col-md-9': navStatus.visible, 'col-md-12': !navStatus.visible }">
       <!-- Above Category Message -->
       <!-- <br>
       <div class="categoryPanel text-center" ng-show="(currentCategory.Name === {{'Categories' | r | xlat}})">
@@ -68,7 +68,7 @@
       <br> -->
       <!-- End Message -->
       <categorylistview></categorylistview>
-      <loadingindicator ng-show="productLoadingIndicator" title="{{'Please wait while we fetch all products' | r | xlat}}"/>
+      <loadingindicator ng-show="productLoadingIndicator" title="{{'Please wait while we fetch all products' | r | xlat}}" />
       <!-- Below Category Message -->
       <br>
       <div class="categoryPanel" ng-show="(currentCategory.Name === {{'Categories' | r | xlat}})">

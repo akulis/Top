@@ -9,27 +9,42 @@
 
 /* Jumbo Header Text */
 .jumboHeaderText {
-  padding-top: 20px;
-  width: 600px;
-  margin: 0 auto;
+  text-align: center;
+  /*vertical-align: middle;*/
+  /*padding-top: 20px;*/
   color: #ffffff;
+  /* Change banner color */
+  /*position: relative;
+    top: 50%;
+    transform: translateY(-50%);*/
 }
 
 /* Jumbotron settings */
+/* .jumbotron {
+  background-color: #000000;
+} */
+.container .jumbotron, .container-view .jumbotron {
+  border-radius: 0px;
+}
+
+.jumbotron .row {
+  color: #ffffff;
+}
+
 .jumbotron {
-  background-color: #0f253a;
+  padding: 0px;
 }
 
 /* Navbar Logo */
 .navLogo {
   max-width: 100%;
-  max-height: 40px;
+  max-height: 47px;
 }
 
 /* Banner Logo */
 .bannerLogo {
   max-width: 100%;
-  max-height: 250px;
+  /* max-height: 250px; */
 }
 
 /* Footer Logo */
@@ -68,28 +83,28 @@
 /* Theme CSS Edits */
 /* Navbar Color - Update This */
 .navbar-default {
-  background-color: #0f253a;
+  background-color: #f5f5f5;
 }
 
 /* Highlight Colors - Update These */
 .container .navbar-nav li.active a:hover {
-  background-color: #ffffff;
+  background-color: #0f253a;
 }
 
 .container .navbar-nav li.active a:focus {
-  background-color: #ffffff;
+  background-color: #0f253a;
 }
 
 .navbar-default .navbar-nav .open>a {
-  background-color: #ffffff;
+  background-color: #0f253a;
 }
 
 .navbar-default .navbar-nav .open>a:hover {
-  background-color: #ffffff;
+  background-color: #0f253a;
 }
 
 .navbar-default .navbar-nav .open>a:focus {
-  background-color: #ffffff;
+  background-color: #0f253a;
 }
 
 .navbar-nav li.dropdown li>a:hover {
@@ -101,11 +116,17 @@
 }
 
 .navbar .container .navbar-nav li.active .fa-caret-down {
-  color: #ffffff;
+  color: #0f253a;
 }
 
 .container .navbar-nav li.active>a {
-  background-color: #ffffff;
+  background-color: #0f253a;
+}
+
+/* Navbar Left / Back Arrow */
+.navbar .container .navbar-nav.pull-left li.fadeInLeft a i,
+.navbar .container-view .navbar-nav.pull-left li.fadeInLeft a i {
+  color: #0f253a;
 }
 
 /* End match color here */
@@ -116,24 +137,58 @@
 
 /* Change Panel Heading Font Color */
 .panel-primary .panel-heading .panel-title {
-  color: #ffffff;
+  color: #0f253a;
 }
 
 /* Navbar text when highlighted */
-.container .navbar-nav li.active a:hover,
-.container .navbar-nav li.active>a,
-.container .navbar-nav li.active a:focus,
-.navbar-default .navbar-nav .open>a:focus {
-  color: #000000;
+.container .navbar-nav li.active a:hover, .container .navbar-nav li.active>a, .container .navbar-nav li.active a:focus, .navbar-default .navbar-nav .open>a:focus {
+  color: #ffffff;
 }
 
 /* Navbar Default Font Color */
-.navbar-default .navbar-nav .open>a:hover,
-.navbar-default .navbar-nav .open>a {
-  color: #000000;
+.navbar-default .navbar-nav .open>a:hover, .navbar-default .navbar-nav .open>a {
+  color: #ffffff;
+}
+
+/* Changes font color when not in use */
+.container .navbar-nav li a, .container .navbar-nav li a:hover {
+  color: #0f253a;
 }
 
 /* Drop down font color */
 .navbar-nav li.dropdown li>a:hover {
   color: #ffffff;
+}
+
+.badge {
+  color: #0f253a;
+}
+
+.badge {
+  background-color: undefined;
+}
+
+.shoppingCartIndicator ul li a {
+  color: #0f253a;
+}
+
+/* Spending Account Nav Option */
+.spendingaccounts {
+  padding: 15px 8px;
+  color: #0f253a;
+  font-size: 75%;
+}
+
+.spendingaccounts-xs {
+  padding: 18px 0px 0px 0px;
+  color: #0f253a;
+  font-size: 1.7vmin;
+}
+
+.dropdown-mega, .navbar-default {
+  border-color: ;
+}
+
+.text-primary {
+  color: #000000;
 }
