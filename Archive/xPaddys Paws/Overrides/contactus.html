@@ -1,0 +1,21 @@
+<section>
+  <accountnavigation ng-show="user.Permissions.contains('ViewSelfAdmin') || user.Type == 'Customer'" />
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title panel-primary">{{('Help' | r) | xlat }}</h3>
+    </div>
+    <div class="panel-body contactUsList" style="font-family:sans-serif">
+      <h3>Customer Service</h3>
+      <p>If you have any questions about your order, please contact Top Promotions at: 608-826-6990 or via e-mail at <a href="mailto:webservices@toppromotions.com?subject=Paddys%20Paws%20Customer%20Service%20Question">webservices@toppromotions.com</a>. Office hours are Monday-Friday 8am-5pm CST.</p>
+      <h3>Product Delivery</h3>
+      <p>Orders will be accepted through XXX and will ship by YYY.</p>
+      <p>All orders will be shipped by the method selected at checkout.  Please note selecting an expedited freight method does not change the ship date of the order, only the ship method.</p>
+      <h3>Returns/Exchanges</h3>
+      <p>Each item is custom made just for you, we appreciate your understanding that returns are not accepted except in the case of defective product.</p>
+      <h3>Payment</h3>
+      <p>All orders must be paid for by credit card.</p>
+    </div>
+    <div class="panel-footer">
+    </div>
+  </div>
+</section>
