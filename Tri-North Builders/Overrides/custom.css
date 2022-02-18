@@ -88,56 +88,56 @@
 
 /* Highlight Colors - Update These */
 .container .navbar-nav li.active a:hover {
-  background-color: #47292b;
+  background-color: #093c71;
 }
 
 .container .navbar-nav li.active a:focus {
-  background-color: #47292b;
+  background-color: #093c71;
 }
 
 .navbar-default .navbar-nav .open>a {
-  background-color: #47292b;
+  background-color: #093c71;
 }
 
 .navbar-default .navbar-nav .open>a:hover {
-  background-color: #47292b;
+  background-color: #093c71;
 }
 
 .navbar-default .navbar-nav .open>a:focus {
-  background-color: #47292b;
+  background-color: #093c71;
 }
 
 .navbar-nav li.dropdown li>a:hover {
-  background-color: #47292b;
+  background-color: #093c71;
 }
 
 .navbar-nav li.dropdown li>a:focus {
-  background-color: #47292b;
+  background-color: #093c71;
 }
 
 .navbar .container .navbar-nav li.active .fa-caret-down {
-  color: #47292b;
+  color: #093c71;
 }
 
 .container .navbar-nav li.active>a {
-  background-color: #47292b;
+  background-color: #093c71;
 }
 
 /* Navbar Left / Back Arrow */
 .navbar .container .navbar-nav.pull-left li.fadeInLeft a i,
 .navbar .container-view .navbar-nav.pull-left li.fadeInLeft a i {
-  color: #47292b;
+  color: #093c71;
 }
 
 /* End match color here */
 /* Change Panel Heading Color */
 .panel-primary .panel-heading .panel-title {
-  background-color: #47292b;
+  background-color: #093c71;
 }
 
 /* Change Panel Heading Font Color */
 .panel-primary .panel-heading .panel-title {
-  color: #47292b;
+  color: #093c71;
 }
 
 /* Navbar text when highlighted */
@@ -152,7 +152,7 @@
 
 /* Changes font color when not in use */
 .container .navbar-nav li a, .container .navbar-nav li a:hover {
-  color: #47292b;
+  color: #093c71;
 }
 
 /* Drop down font color */
@@ -161,7 +161,7 @@
 }
 
 .badge {
-  color: #47292b;
+  color: #093c71;
 }
 
 .badge {
@@ -169,19 +169,19 @@
 }
 
 .shoppingCartIndicator ul li a {
-  color: #47292b;
+  color: #093c71;
 }
 
 /* Spending Account Nav Option */
 .spendingaccounts {
   padding: 15px 8px;
-  color: #47292b;
+  color: #093c71;
   font-size: 75%;
 }
 
 .spendingaccounts-xs {
   padding: 18px 0px 0px 0px;
-  color: #47292b;
+  color: #093c71;
   font-size: 1.7vmin;
 }
 
@@ -191,74 +191,4 @@
 
 .text-primary {
   color: #000000;
-}
-
-/* THERMOMETER */
-body * {
-  font-family: 'Nunito', sans-serif;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #ffffff;
-}
-
-#countdown-wrap {
-  width: 100%;
-  height: 300px;
-  //border: 1px solid black;
-  font-family: Arial;
-  max-width: 650px;
-  margin: 10px auto 10px;
-}
-
-#goal {
-  font-size: 40px;
-  text-align: center;
-  color: #000000;
-
-  @media only screen and (max-width : 640px) {
-    text-align: center;
-  }
-}
-
-#glass {
-  width: 100%;
-  height: 50px;
-  background: #000000;
-  border-radius: 10px;
-  float: left;
-  overflow: hidden;
-}
-
-#progress {
-  float: left;
-  width: 16%;
-  height: 50px;
-  background: #FFCD00;
-  z-index: 333;
-  //border-radius: 5px;
-}
-
-.goal-stat {
-  font-size: 20px;
-  width: 30%;
-  //height: 20px;
-  padding: 1px;
-  float: left;
-  margin: 1;
-  color: #000000;
-
-  @media only screen and (max-width : 640px) {
-    width: 50%;
-    text-align: center;
-  }
-}
-
-.goal-number, .goal-label {
-  display: block;
-}
-
-.goal-number {
-  font-weight: bold;
 }
