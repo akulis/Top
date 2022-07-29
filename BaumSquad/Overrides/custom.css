@@ -83,85 +83,85 @@
 /* Theme CSS Edits */
 /* Navbar Color - Update This */
 .navbar-default {
-  background-color: #000000;
+  background-color: #f5f5f5;
 }
 
 /* Highlight Colors - Update These */
 .container .navbar-nav li.active a:hover {
-  background-color: #ffb107;
+  background-color: #25215e;
 }
 
 .container .navbar-nav li.active a:focus {
-  background-color: #ffb107;
+  background-color: #25215e;
 }
 
 .navbar-default .navbar-nav .open>a {
-  background-color: #ffb107;
+  background-color: #25215e;
 }
 
 .navbar-default .navbar-nav .open>a:hover {
-  background-color: #ffb107;
+  background-color: #25215e;
 }
 
 .navbar-default .navbar-nav .open>a:focus {
-  background-color: #ffb107;
+  background-color: #25215e;
 }
 
 .navbar-nav li.dropdown li>a:hover {
-  background-color: #ffb107;
+  background-color: #25215e;
 }
 
 .navbar-nav li.dropdown li>a:focus {
-  background-color: #ffb107;
+  background-color: #25215e;
 }
 
 .navbar .container .navbar-nav li.active .fa-caret-down {
-  color: #ffb107;
+  color: #25215e;
 }
 
 .container .navbar-nav li.active>a {
-  background-color: #ffb107;
+  background-color: #25215e;
 }
 
 /* Navbar Left / Back Arrow */
 .navbar .container .navbar-nav.pull-left li.fadeInLeft a i,
 .navbar .container-view .navbar-nav.pull-left li.fadeInLeft a i {
-  color: #ffb107;
+  color: #25215e;
 }
 
 /* End match color here */
 /* Change Panel Heading Color */
 .panel-primary .panel-heading .panel-title {
-  background-color: #ffb107;
+  background-color: #25215e;
 }
 
 /* Change Panel Heading Font Color */
 .panel-primary .panel-heading .panel-title {
-  color: #ffb107;
+  color: #25215e;
 }
 
 /* Navbar text when highlighted */
 .container .navbar-nav li.active a:hover, .container .navbar-nav li.active>a, .container .navbar-nav li.active a:focus, .navbar-default .navbar-nav .open>a:focus {
-  color: #000000;
+  color: #ffffff;
 }
 
 /* Navbar Default Font Color */
 .navbar-default .navbar-nav .open>a:hover, .navbar-default .navbar-nav .open>a {
-  color: #000000;
+  color: #ffffff;
 }
 
 /* Changes font color when not in use */
 .container .navbar-nav li a, .container .navbar-nav li a:hover {
-  color: #ffb107;
+  color: #25215e;
 }
 
 /* Drop down font color */
 .navbar-nav li.dropdown li>a:hover {
-  color: #000000;
+  color: #ffffff;
 }
 
 .badge {
-  color: #ffb107;
+  color: #25215e;
 }
 
 .badge {
@@ -169,19 +169,19 @@
 }
 
 .shoppingCartIndicator ul li a {
-  color: #ffb107;
+  color: #25215e;
 }
 
 /* Spending Account Nav Option */
 .spendingaccounts {
   padding: 15px 8px;
-  color: #ffb107;
+  color: #25215e;
   font-size: 75%;
 }
 
 .spendingaccounts-xs {
   padding: 18px 0px 0px 0px;
-  color: #ffb107;
+  color: #25215e;
   font-size: 1.7vmin;
 }
 
@@ -192,7 +192,6 @@
 .text-primary {
   color: #000000;
 }
-
 
 /* THERMOMETER */
 body * {
@@ -214,7 +213,7 @@ body {
 }
 
 #goal {
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
   color: #000000;
 
@@ -234,7 +233,7 @@ body {
 
 #progress {
   float: left;
-  width: 16%;
+  width: 114%;
   height: 50px;
   background: #FFCD00;
   z-index: 333;
