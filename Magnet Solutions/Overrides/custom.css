@@ -88,56 +88,56 @@
 
 /* Highlight Colors - Update These */
 .container .navbar-nav li.active a:hover {
-  background-color: #Replace-This-Color;
+  background-color: #6b7376;
 }
 
 .container .navbar-nav li.active a:focus {
-  background-color: #Replace-This-Color;
+  background-color: #6b7376;
 }
 
 .navbar-default .navbar-nav .open>a {
-  background-color: #Replace-This-Color;
+  background-color: #6b7376;
 }
 
 .navbar-default .navbar-nav .open>a:hover {
-  background-color: #Replace-This-Color;
+  background-color: #6b7376;
 }
 
 .navbar-default .navbar-nav .open>a:focus {
-  background-color: #Replace-This-Color;
+  background-color: #6b7376;
 }
 
 .navbar-nav li.dropdown li>a:hover {
-  background-color: #Replace-This-Color;
+  background-color: #6b7376;
 }
 
 .navbar-nav li.dropdown li>a:focus {
-  background-color: #Replace-This-Color;
+  background-color: #6b7376;
 }
 
 .navbar .container .navbar-nav li.active .fa-caret-down {
-  color: #Replace-This-Color;
+  color: #6b7376;
 }
 
 .container .navbar-nav li.active>a {
-  background-color: #Replace-This-Color;
+  background-color: #6b7376;
 }
 
 /* Navbar Left / Back Arrow */
 .navbar .container .navbar-nav.pull-left li.fadeInLeft a i,
 .navbar .container-view .navbar-nav.pull-left li.fadeInLeft a i {
-  color: #Replace-This-Color;
+  color: #6b7376;
 }
 
 /* End match color here */
 /* Change Panel Heading Color */
 .panel-primary .panel-heading .panel-title {
-  background-color: #Replace-This-Color;
+  background-color: #6b7376;
 }
 
 /* Change Panel Heading Font Color */
 .panel-primary .panel-heading .panel-title {
-  color: #Replace-This-Color;
+  color: #6b7376;
 }
 
 /* Navbar text when highlighted */
@@ -152,7 +152,7 @@
 
 /* Changes font color when not in use */
 .container .navbar-nav li a, .container .navbar-nav li a:hover {
-  color: #Replace-This-Color;
+  color: #6b7376;
 }
 
 /* Drop down font color */
@@ -161,7 +161,7 @@
 }
 
 .badge {
-  color: #Replace-This-Color;
+  color: #6b7376;
 }
 
 .badge {
@@ -169,19 +169,19 @@
 }
 
 .shoppingCartIndicator ul li a {
-  color: #Replace-This-Color;
+  color: #6b7376;
 }
 
 /* Spending Account Nav Option */
 .spendingaccounts {
   padding: 15px 8px;
-  color: #Replace-This-Color;
+  color: #6b7376;
   font-size: 75%;
 }
 
 .spendingaccounts-xs {
   padding: 18px 0px 0px 0px;
-  color: #Replace-This-Color;
+  color: #6b7376;
   font-size: 1.7vmin;
 }
 
