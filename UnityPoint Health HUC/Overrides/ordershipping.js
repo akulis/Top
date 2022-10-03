@@ -237,9 +237,9 @@ four51.app.directive('ordershipping', ['Order', 'Shipper', 'Address', 'AddressLi
         $scope.addressform = false;
       });
 
-      //Only returns two shipping methods: UPS Ground and USPS Priority 2 Day which we turn into USPS Ground
+      //Only returns two shipping methods: UPS Ground and USPS Priority Mail which we turn into USPS Ground
       $scope.shipFilter = function(shipper) {
-        return shipper.Name == 'Pick-Up at Top Promotions, Inc. (8831 S. Greenview Dr, Middleton)' || shipper.Name == 'USPS Priority Mail 2-Day™' || shipper.Name == 'UPS Ground';
+        return shipper.Name == 'Pick-Up at Top Promotions, Inc. (8831 S. Greenview Dr, Middleton)' || shipper.Name == 'USPS Priority Mail®' || shipper.Name == 'UPS Ground';
       };
     }]
   };

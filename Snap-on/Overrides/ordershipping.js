@@ -239,7 +239,7 @@ four51.app.directive('ordershipping', ['Order', 'Shipper', 'Address', 'AddressLi
 
       //Only returns two shipping methods: UPS Ground and USPS Priority 2 Day which we turn into USPS Ground
       $scope.shipFilter = function(shipper) {
-        return shipper.Name == 'USPS Priority Mail 2-Day™' || shipper.Name == 'UPS Ground';
+        return shipper.Name == 'USPS Priority Mail®' || shipper.Name == 'UPS Ground';
       };
     }]
   };

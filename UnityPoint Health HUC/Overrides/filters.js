@@ -87,7 +87,7 @@ four51.app.filter('USPSFilter', function() {
   debugger;
   return function(object) {
     if (object) {
-      return object.replace(/USPS Priority Mail 2-Day™/g, 'USPS Ground');
+      return object.replace(/USPS Priority Mail®/g, 'USPS Ground');
     }
   }
 });
@@ -107,8 +107,8 @@ four51.app.filter('USPSFilter3', function() {
   debugger;
   return function(object) {
     if (object == 'UPS Ground') return 'UPS Ground';
-    if (object == 'USPS Priority Mail 2-Day™') return object.replace(/USPS Priority Mail 2-Day™/g, 'USPS Ground');
+    if (object == 'USPS Priority Mail®') return object.replace(/USPS Priority Mail®/g, 'USPS Ground');
     if (object == 'USPS USPS Retail Ground™') return object.replace(/USPS USPS Retail Ground™/g, 'USPS Retail Ground');
-    //if (object === 'USPS USPS Retail Ground™') object.remove != 'USPS Priority Mail 2-Day™';
+    //if (object === 'USPS USPS Retail Ground™') object.remove != 'USPS Priority Mail®';
   }
 });
