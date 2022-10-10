@@ -3,9 +3,9 @@
 
 <head>
   <!-- enable this script for site down message, disable for site active, script begin -->
-  <!-- <script type="text/javascript">
+  <!--<script type="text/javascript">
     { window.location.replace("sitedownSplashPage.html"); }
-  </script> -->
+  </script--!>
   <!-- site down script end -->
   <!--baseTagToken-->
   <!--headscriptToken-->
@@ -53,7 +53,7 @@
 
 <body ng-cloak ng-class="ng-cloak">
   <section>
-    <section ng-hide="Four51User.isAuthenticated() || isAnon" class="container">
+    <section ng-hide="Four51User.isAuthenticated() || (isAnon && Four51User.isAuthenticated())" class="container">
       <login />
     </section>
     <section ng-if="Four51User.isAuthenticated()" id="content">

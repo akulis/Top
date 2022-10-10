@@ -237,9 +237,9 @@ four51.app.directive('ordershipping', ['Order', 'Shipper', 'Address', 'AddressLi
         $scope.addressform = false;
       });
 
-      //Only returns two shipping methods: UPS Ground and USPS Priority Mail which we turn into USPS Ground
+      //Returns three shipping methods: Pick-Up @ Top, UPS Ground and USPS Priority Mail which we turn into USPS Ground - Remember, shipper.Name must match the Shipper field from 451 exactly
       $scope.shipFilter = function(shipper) {
-        return shipper.Name == 'Pick-Up at Top Promotions, Inc. (8831 S. Greenview Dr, Middleton)' || shipper.Name == 'USPS Priority Mail®' || shipper.Name == 'UPS Ground';
+        return shipper.Name == 'Pick-Up at Top Promotions, Inc. (8831 S. Greenview Dr, Middleton WI)' || shipper.Name == 'USPS Priority Mail®' || shipper.Name == 'UPS Ground';
       };
     }]
   };
