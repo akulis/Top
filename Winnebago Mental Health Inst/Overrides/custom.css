@@ -160,18 +160,6 @@
   color: #ffffff;
 }
 
-.badge {
-  color: #ffffff;
-}
-
-.badge {
-  background-color: undefined;
-}
-
-.shoppingCartIndicator ul li a {
-  color: #ffffff;
-}
-
 /* Spending Account Nav Option */
 .spendingaccounts {
   padding: 15px 8px;
@@ -187,8 +175,4 @@
 
 .dropdown-mega, .navbar-default {
   border-color: ;
-}
-
-.text-primary {
-  color: #000000;
 }

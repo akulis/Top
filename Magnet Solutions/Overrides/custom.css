@@ -126,7 +126,7 @@
 /* Navbar Left / Back Arrow */
 .navbar .container .navbar-nav.pull-left li.fadeInLeft a i,
 .navbar .container-view .navbar-nav.pull-left li.fadeInLeft a i {
-  color: #6b7376;
+  color: #000000;
 }
 
 /* End match color here */
@@ -137,7 +137,7 @@
 
 /* Change Panel Heading Font Color */
 .panel-primary .panel-heading .panel-title {
-  color: #6b7376;
+  color: #ffffff;
 }
 
 /* Navbar text when highlighted */
@@ -152,7 +152,7 @@
 
 /* Changes font color when not in use */
 .container .navbar-nav li a, .container .navbar-nav li a:hover {
-  color: #6b7376;
+  color: #000000;
 }
 
 /* Drop down font color */
@@ -160,35 +160,19 @@
   color: #ffffff;
 }
 
-.badge {
-  color: #6b7376;
-}
-
-.badge {
-  background-color: undefined;
-}
-
-.shoppingCartIndicator ul li a {
-  color: #6b7376;
-}
-
 /* Spending Account Nav Option */
 .spendingaccounts {
   padding: 15px 8px;
-  color: #6b7376;
+  color: #000000;
   font-size: 75%;
 }
 
 .spendingaccounts-xs {
   padding: 18px 0px 0px 0px;
-  color: #6b7376;
+  color: #000000;
   font-size: 1.7vmin;
 }
 
 .dropdown-mega, .navbar-default {
   border-color: ;
-}
-
-.text-primary {
-  color: #000000;
 }
