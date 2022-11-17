@@ -40,16 +40,15 @@
                 <div ng-show="shipaddresses" ng-class="{'view-form-select': !currentOrder.ShipAddressID, '': currentOrder.ShipAddressID }">
                   <label ng-class="{required: !currentOrder.IsMultipleShip()}" ng-show="currentOrder.ShipAddressID || !currentOrder.IsMultipleShip()">{{('Shipping' | r) + ' ' + ('Address' | r) | xlat}}</label>
                   <select class="form-control" name="shippingAddress" ng-change="setShipAddressAtOrderLevel()" ng-options="address.ID as address.AddressName for address in shipaddresses" ng-model="currentOrder.ShipAddressID" ng-required="!currentOrder.IsMultipleShip()">
-                                            <option value=""></option>
-                                        </select>
+                    <option value=""></option>
+                  </select>
                   <i class="fa fa-map-marker"></i>
                 </div>
                 <div ng-show="user.ShipMethod != null && shippers" ng-class="{'view-form-select': !currentOrder.LineItems[0].ShipperName, '': currentOrder.LineItems[0].ShipperName }">
                   <label ng-class="{required: !currentOrder.IsMultipleShip() && user.ShipMethod != null}" ng-show="currentOrder.LineItems[0].ShipperName || !currentOrder.IsMultipleShip() && user.ShipMethod != null">{{('Shipping' | r) + ' Method' | xlat}}</label>
-                  <select class="form-control" ng-change="updateShipper()" name="shipMethod" ng-model="currentOrder.LineItems[0].ShipperName" ng-show="user.ShipMethod.ShipperSelectionType == 'UserDropDown'" ng-options="shipper.Name as ((shipper.Name | USPSFilter) + ' ' + (shipper.ShippingRate.Price | currency | xlat)) for shipper in shippers | filter:shipFilter"
-                    ng-required="!currentOrder.IsMultipleShip() && user.ShipMethod != null">
-                                      <option value=""></option>
-                                    </select>
+                  <select class="form-control" ng-change="updateShipper()" name="shipMethod" ng-model="currentOrder.LineItems[0].ShipperName" ng-show="user.ShipMethod.ShipperSelectionType == 'UserDropDown'" ng-options="shipper.Name as ((shipper.Name | USPSFilter) + ' ' + (shipper.ShippingRate.Price | currency | xlat)) for shipper in shippers | filter:shipFilter" ng-required="!currentOrder.IsMultipleShip() && user.ShipMethod != null">
+                    <option value=""></option>
+                  </select>
                   <i class="fa fa-truck"></i>
                 </div>
               </div>
