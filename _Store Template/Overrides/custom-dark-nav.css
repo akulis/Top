@@ -86,59 +86,61 @@
 }*/
 
 /* THEME CSS EDITS */
-
-/* NAVBAR COLORS FOR LIGHT NAVBAR */
+/* NAVBAR COLORS FOR DARK NAVBAR */
 .navbar-default {
-  background-color: #f5f5f5;
+  background-color: #000000;
+  /* Or STORE-COLOR-HERE if needed */
 }
 
 /* Highlight Colors - Update These */
 .container .navbar-nav li.active a:hover {
-  background-color: #333132;
+  background-color: #ffffff;
 }
 
 .container .navbar-nav li.active a:focus {
-  background-color: #333132;
+  background-color: #ffffff;
 }
 
 .navbar-default .navbar-nav .open>a {
-  background-color: #333132;
+  background-color: #ffffff;
 }
 
 .navbar-default .navbar-nav .open>a:hover {
-  background-color: #333132;
+  background-color: #ffffff;
 }
 
 .navbar-default .navbar-nav .open>a:focus {
-  background-color: #333132;
+  background-color: #ffffff;
 }
 
 .navbar-nav li.dropdown li>a:hover {
-  background-color: #333132;
+  background-color: #STORE-COLOR-HERE;
+  /* background-color: #000000; -- If it needs to stay black */
 }
 
 .navbar-nav li.dropdown li>a:focus {
-  background-color: #333132;
+  background-color: #ffffff;
 }
 
 .navbar .container .navbar-nav li.active .fa-caret-down {
-  color: #333132;
+  color: #ffffff;
 }
 
 .container .navbar-nav li.active>a {
-  background-color: #333132;
+  background-color: #ffffff;
 }
 
 /* Navbar Left / Back Arrow */
 .navbar .container .navbar-nav.pull-left li.fadeInLeft a i,
 .navbar .container-view .navbar-nav.pull-left li.fadeInLeft a i {
-  color: #000000;
+  color: #ffffff;
 }
 
 /* End match color here */
 /* Change Panel Heading Color */
 .panel-primary .panel-heading .panel-title {
-  background-color: #333132;
+  background-color: #STORE-COLOR-HERE;
+  /* background-color: #000000; -- If it needs to stay black */
 }
 
 /* Change Panel Heading Font Color */
@@ -148,17 +150,17 @@
 
 /* Navbar text when highlighted */
 .container .navbar-nav li.active a:hover, .container .navbar-nav li.active>a, .container .navbar-nav li.active a:focus, .navbar-default .navbar-nav .open>a:focus {
-  color: #ffffff;
+  color: #000000;
 }
 
 /* Navbar Default Font Color */
 .navbar-default .navbar-nav .open>a:hover, .navbar-default .navbar-nav .open>a {
-  color: #ffffff;
+  color: #000000;
 }
 
 /* Changes font color when not in use */
 .container .navbar-nav li a, .container .navbar-nav li a:hover {
-  color: #000000;
+  color: #ffffff;
 }
 
 /* Drop down font color */
@@ -169,12 +171,12 @@
 /* Spending Account Nav Option */
 .spendingaccounts {
   padding: 15px 8px;
-  color: #000000;
+  color: #ffffff;
   font-size: 75%;
 }
 
 .spendingaccounts-xs {
   padding: 18px 0px 0px 0px;
-  color: #000000;
+  color: #ffffff;
   font-size: 1.7vmin;
 }
