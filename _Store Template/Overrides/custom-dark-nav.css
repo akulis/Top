@@ -19,10 +19,6 @@
     transform: translateY(-50%);*/
 }
 
-/* Jumbotron settings */
-/* .jumbotron {
-  background-color: #000000;
-} */
 .container .jumbotron, .container-view .jumbotron {
   border-radius: 0px;
 }
@@ -65,26 +61,6 @@
   list-style-type: disc;
 }
 
-.dropdown-mega, .navbar-default {
-  border-color: ;
-}
-
-/*.HomeMessage {
-  text-align: center;
-  font-size: 14pt;
-  font-style: bold;
-  color: #063B6D !important;
-}
-.HomeMessageFont2 {
-  font-size: 10pt;
-}
-.HomeMessageFont3 {
-  font-size: 13pt;
-}
-.HomeMessageFont4 {
-  font-size: 6pt;
-}*/
-
 /* THEME CSS EDITS */
 /* NAVBAR COLORS FOR DARK NAVBAR */
 .navbar-default {
@@ -115,7 +91,6 @@
 
 .navbar-nav li.dropdown li>a:hover {
   background-color: #STORE-COLOR-HERE;
-  /* background-color: #000000; -- If it needs to stay black */
 }
 
 .navbar-nav li.dropdown li>a:focus {
@@ -140,7 +115,6 @@
 /* Change Panel Heading Color */
 .panel-primary .panel-heading .panel-title {
   background-color: #STORE-COLOR-HERE;
-  /* background-color: #000000; -- If it needs to stay black */
 }
 
 /* Change Panel Heading Font Color */

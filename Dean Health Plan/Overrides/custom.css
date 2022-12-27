@@ -19,10 +19,6 @@
     transform: translateY(-50%);*/
 }
 
-/* Jumbotron settings */
-/* .jumbotron {
-  background-color: #000000;
-} */
 .container .jumbotron, .container-view .jumbotron {
   border-radius: 0px;
 }
@@ -65,23 +61,9 @@
   list-style-type: disc;
 }
 
-/*.HomeMessage {
-  text-align: center;
-  font-size: 14pt;
-  font-style: bold;
-  color: #063B6D !important;
-}
-.HomeMessageFont2 {
-  font-size: 10pt;
-}
-.HomeMessageFont3 {
-  font-size: 13pt;
-}
-.HomeMessageFont4 {
-  font-size: 6pt;
-}*/
-/* Theme CSS Edits */
-/* Navbar Color - Update This */
+/* THEME CSS EDITS */
+
+/* NAVBAR COLORS FOR LIGHT NAVBAR */
 .navbar-default {
   background-color: #f5f5f5;
 }
@@ -126,7 +108,7 @@
 /* Navbar Left / Back Arrow */
 .navbar .container .navbar-nav.pull-left li.fadeInLeft a i,
 .navbar .container-view .navbar-nav.pull-left li.fadeInLeft a i {
-  color: #182957;
+  color: #000000;
 }
 
 /* End match color here */
@@ -137,7 +119,7 @@
 
 /* Change Panel Heading Font Color */
 .panel-primary .panel-heading .panel-title {
-  color: #182957;
+  color: #ffffff;
 }
 
 /* Navbar text when highlighted */
@@ -152,7 +134,7 @@
 
 /* Changes font color when not in use */
 .container .navbar-nav li a, .container .navbar-nav li a:hover {
-  color: #182957;
+  color: #000000;
 }
 
 /* Drop down font color */
@@ -160,35 +142,15 @@
   color: #ffffff;
 }
 
-.badge {
-  color: #182957;
-}
-
-.badge {
-  background-color: undefined;
-}
-
-.shoppingCartIndicator ul li a {
-  color: #182957;
-}
-
 /* Spending Account Nav Option */
 .spendingaccounts {
   padding: 15px 8px;
-  color: #182957;
+  color: #000000;
   font-size: 75%;
 }
 
 .spendingaccounts-xs {
   padding: 18px 0px 0px 0px;
-  color: #182957;
-  font-size: 1.7vmin;
-}
-
-.dropdown-mega, .navbar-default {
-  border-color: ;
-}
-
-.text-primary {
   color: #000000;
+  font-size: 1.7vmin;
 }
