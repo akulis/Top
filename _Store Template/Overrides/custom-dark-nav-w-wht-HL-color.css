@@ -90,7 +90,7 @@
 }
 
 .navbar-nav li.dropdown li>a:hover {
-  background-color: #STORE-COLOR-HERE;
+  background-color: #000000;
 }
 
 .navbar-nav li.dropdown li>a:focus {

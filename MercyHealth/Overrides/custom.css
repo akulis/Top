@@ -19,10 +19,6 @@
     transform: translateY(-50%);*/
 }
 
-/* Jumbotron settings */
-/* .jumbotron {
-  background-color: #000000;
-} */
 .container .jumbotron, .container-view .jumbotron {
   border-radius: 0px;
 }
@@ -65,79 +61,65 @@
   list-style-type: disc;
 }
 
-/*.HomeMessage {
-  text-align: center;
-  font-size: 14pt;
-  font-style: bold;
-  color: #063B6D !important;
-}
-.HomeMessageFont2 {
-  font-size: 10pt;
-}
-.HomeMessageFont3 {
-  font-size: 13pt;
-}
-.HomeMessageFont4 {
-  font-size: 6pt;
-}*/
-/* Theme CSS Edits */
-/* Navbar Color - Update This */
+/* THEME CSS EDITS */
+
+/* NAVBAR COLORS FOR LIGHT NAVBAR */
 .navbar-default {
   background-color: #f5f5f5;
 }
 
 /* Highlight Colors - Update These */
 .container .navbar-nav li.active a:hover {
-  background-color: #0e64b2;
+  background-color: #0f66b3;
 }
 
 .container .navbar-nav li.active a:focus {
-  background-color: #0e64b2;
+  background-color: #0f66b3;
 }
 
 .navbar-default .navbar-nav .open>a {
-  background-color: #0e64b2;
+  background-color: #0f66b3;
 }
 
 .navbar-default .navbar-nav .open>a:hover {
-  background-color: #0e64b2;
+  background-color: #0f66b3;
 }
 
 .navbar-default .navbar-nav .open>a:focus {
-  background-color: #0e64b2;
+  background-color: #0f66b3;
 }
 
 .navbar-nav li.dropdown li>a:hover {
-  background-color: #0e64b2;
+  background-color: #0f66b3;
 }
 
 .navbar-nav li.dropdown li>a:focus {
-  background-color: #0e64b2;
+  background-color: #0f66b3;
 }
 
 .navbar .container .navbar-nav li.active .fa-caret-down {
-  color: #0e64b2;
+  color: #0f66b3;
 }
 
 .container .navbar-nav li.active>a {
-  background-color: #0e64b2;
+  background-color: #0f66b3;
 }
 
 /* Navbar Left / Back Arrow */
 .navbar .container .navbar-nav.pull-left li.fadeInLeft a i,
 .navbar .container-view .navbar-nav.pull-left li.fadeInLeft a i {
-  color: #0e64b2;
+  color: #000000;
 }
 
 /* End match color here */
 /* Change Panel Heading Color */
 .panel-primary .panel-heading .panel-title {
-  background-color: #0e64b2;
+  background-color: #0f66b3;
 }
 
 /* Change Panel Heading Font Color */
 .panel-primary .panel-heading .panel-title {
-  color: #0e64b2;
+  color: #ffffff;
 }
 
 /* Navbar text when highlighted */
@@ -152,7 +134,7 @@
 
 /* Changes font color when not in use */
 .container .navbar-nav li a, .container .navbar-nav li a:hover {
-  color: #0e64b2;
+  color: #000000;
 }
 
 /* Drop down font color */
@@ -160,35 +142,15 @@
   color: #ffffff;
 }
 
-.badge {
-  color: #0e64b2;
-}
-
-.badge {
-  background-color: undefined;
-}
-
-.shoppingCartIndicator ul li a {
-  color: #0e64b2;
-}
-
 /* Spending Account Nav Option */
 .spendingaccounts {
   padding: 15px 8px;
-  color: #0e64b2;
+  color: #000000;
   font-size: 75%;
 }
 
 .spendingaccounts-xs {
   padding: 18px 0px 0px 0px;
-  color: #0e64b2;
-  font-size: 1.7vmin;
-}
-
-.dropdown-mega, .navbar-default {
-  border-color: ;
-}
-
-.text-primary {
   color: #000000;
+  font-size: 1.7vmin;
 }
