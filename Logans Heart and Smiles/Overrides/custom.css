@@ -70,39 +70,39 @@
 
 /* Highlight Colors - Update These */
 .container .navbar-nav li.active a:hover {
-  background-color: #STORE-COLOR-HERE;
+  background-color: #19666c;
 }
 
 .container .navbar-nav li.active a:focus {
-  background-color: #STORE-COLOR-HERE;
+  background-color: #19666c;
 }
 
 .navbar-default .navbar-nav .open>a {
-  background-color: #STORE-COLOR-HERE;
+  background-color: #19666c;
 }
 
 .navbar-default .navbar-nav .open>a:hover {
-  background-color: #STORE-COLOR-HERE;
+  background-color: #19666c;
 }
 
 .navbar-default .navbar-nav .open>a:focus {
-  background-color: #STORE-COLOR-HERE;
+  background-color: #19666c;
 }
 
 .navbar-nav li.dropdown li>a:hover {
-  background-color: #STORE-COLOR-HERE;
+  background-color: #19666c;
 }
 
 .navbar-nav li.dropdown li>a:focus {
-  background-color: #STORE-COLOR-HERE;
+  background-color: #19666c;
 }
 
 .navbar .container .navbar-nav li.active .fa-caret-down {
-  color: #STORE-COLOR-HERE;
+  color: #19666c;
 }
 
 .container .navbar-nav li.active>a {
-  background-color: #STORE-COLOR-HERE;
+  background-color: #19666c;
 }
 
 /* Navbar Left / Back Arrow */
@@ -114,7 +114,7 @@
 /* End match color here */
 /* Change Panel Heading Color */
 .panel-primary .panel-heading .panel-title {
-  background-color: #STORE-COLOR-HERE;
+  background-color: #19666c;
 }
 
 /* Change Panel Heading Font Color */
