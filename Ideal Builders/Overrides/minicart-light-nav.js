@@ -3,12 +3,7 @@ angular.module('OrderCloud-Minicart', []);
 angular.module('OrderCloud-Minicart').directive('minicart', minicart).controller('minicartCtrl', minicartCtrl);
 
 function minicart() {
-  return {
-    restrict: 'E',
-    transclude: true,
-    template: template,
-    controller: 'minicartCtrl'
-  };
+  return {restrict: 'E', transclude: true, template: template, controller: 'minicartCtrl'};
 
   function template() {
     return [
@@ -108,7 +103,6 @@ function minicart() {
 }
 
 minicartCtrl.$inject = ['$scope', '$location', 'Order', 'OrderConfig', 'User'];
-
 function minicartCtrl($scope, $location, Order, OrderConfig, User) {
 
   $scope.removeItem = function(item, override) {
@@ -133,14 +127,14 @@ function minicartCtrl($scope, $location, Order, OrderConfig, User) {
 
   $scope.cartCheckOut = function() {
     $scope.displayLoadingIndicator = true;
-    if (!$scope.isEditforApproval)
+    if (!$scope.isEditforApproval) 
       OrderConfig.address($scope.currentOrder, $scope.user);
     Order.save($scope.currentOrder, function(data) {
       $scope.currentOrder = data;
       $location.path(
-        $scope.isEditforApproval ?
-        'checkout/' + $routeParams.id :
-        'checkout');
+        $scope.isEditforApproval
+        ? 'checkout/' + $routeParams.id
+        : 'checkout');
       $scope.displayLoadingIndicator = false;
     }, function(ex) {
       $scope.errorMessage = ex.Message;
@@ -149,10 +143,10 @@ function minicartCtrl($scope, $location, Order, OrderConfig, User) {
   };
 
   $scope.$on('event:orderUpdate', function(event, order) {
-    $scope.currentOrder = order ?
-      (order.Status === 'Unsubmitted') ?
-      order :
-      null :
-      null;
+    $scope.currentOrder = order
+      ? (order.Status === 'Unsubmitted')
+        ? order
+        : null
+      : null;
   })
 }
