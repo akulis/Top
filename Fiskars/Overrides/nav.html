@@ -12,14 +12,16 @@
           <!-- Navbar Menu Icon -->
           <!-- This icon is for the wider screen -->
           <li id="" class="back animated fadeInLeft hidden-xs">
-            <a id="451qa_home_link" class="" style="padding: 14px 10px 0px 10px; text-align: center;" href="catalog" ng-show="Four51User.isAuthenticated()">
-              <img class="image-responsive navLogo" ng-src="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/Fiskars/images/Fiskars-Logo-50.png" src="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/Fiskars/images/Fiskars-Logo-50.png">
+            <a id="451qa_home_link" class="" style="padding: 6px 10px 0px 10px; text-align: center;" href="catalog" ng-show="Four51User.isAuthenticated()">
+              <img class="image-responsive navLogo" ng-src="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/Fiskars/images/Fiskars-Logo-50.png"
+                src="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/Fiskars/images/Fiskars-Logo-50.png">
             </a>
           </li>
           <!-- This icon is for the slimmer screen -->
           <li id="" class="back animated fadeInLeft hidden-sm hidden-md hidden-lg">
-            <a id="451qa_home_link" class="" style="padding: 14px 10px 0px 10px; text-align: center;" href="catalog" ng-show="Four51User.isAuthenticated()">
-              <img class="image-responsive navLogo" ng-src="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/Fiskars/images/Fiskars-Logo-50.png" src="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/Fiskars/images/Fiskars-Logo-50.png">
+            <a id="451qa_home_link" class="" style="padding: 6px 10px 0px 10px; text-align: center;" href="catalog" ng-show="Four51User.isAuthenticated()">
+              <img class="image-responsive navLogo" ng-src="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/Fiskars/images/Fiskars-Logo-50.png"
+                src="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/Fiskars/images/Fiskars-Logo-50.png">
             </a>
           </li>
           <!-- Programs Button -->
@@ -43,7 +45,7 @@
           <li class="report" ng-if="user.Type == 'Customer' && user.Permissions.contains('AdvancedReporting')" ng-class="{'active': isActive('reports')}">
             <a id="451qa_order_link" href="reports">
               <i class="fa fa-bar-chart-o"></i>
-              <span class="hidden-xs">{{'Reports' | r | xlat}}</span>
+              <span class="hidden-xs hidden-sm">{{'Reports' | r | xlat}}</span>
             </a>
           </li>
           <!-- Login/Account Buttons - No Dropdown-->
@@ -51,7 +53,7 @@
           <li ng-class="{'active': isActive(['admin', 'addresses', 'address', 'messages', 'message', 'favoriteorders'])}">
             <a id="451qa_acct_link" href="admin" ng-hide="user.Type == 'Customer'" class="hidden-md hidden-lg">
               <i class="fa fa-user"></i>
-              <span class="hidden-xs">{{'Login' | r | xlat}}</span>
+              <span class="hidden-xs hidden-sm">{{'Login' | r | xlat}}</span>
             </a>
             <!-- If Logged In -->
             <a id="451qa_acct_link" href="admin" ng-show="user.Type == 'Customer'" class="hidden-md hidden-lg">
@@ -64,7 +66,7 @@
             <!-- If Anonymous User -->
             <a id="451qa_acct_link2" ng-hide="user.Type == 'Customer'" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-user"></i>
-              <span class="hidden-xs">{{'Login' | r | xlat}}</span>
+              <span class="hidden-xs hidden-sm">{{'Login' | r | xlat}}</span>
               <b class="caret"></b>
             </a>
             <!-- If Logged In -->
@@ -113,7 +115,7 @@
               </li>
               <li class="divider" ng-show="user.Type!='TempCustomer' || AppConst.debug"></li>
               <li ng-show="user.Type!='TempCustomer'" class="logout">
-                <a href="#"  class="451_btn_logout" ng-click="Logout()">
+                <a href="#" class="451_btn_logout" ng-click="Logout()">
                   <i class="fa fa-power-off text-danger"></i>
                   <span>{{'Log Out' | r | xlat}}</span>
                 </a>
@@ -131,7 +133,7 @@
           <li class="contactus" ng-if="user.Permissions.contains('ViewContactUs')" ng-hide="user.Type == 'Customer'" ng-class="{'active': isActive('contactus')}">
             <a id="451qa_mesg_link" href="contactus">
               <i class="fa fa-support"></i>
-              <span class="hidden-xs">{{'Help' | r | xlat}}</span>
+              <span class="hidden-xs hidden-sm">{{'Help' | r | xlat}}</span>
             </a>
           </li>
           <!-- If Logged In -->
@@ -143,7 +145,10 @@
           </li>
           <!--SPENDING ACCOUNTS NAV-->
           <li ng-if="userSpendingAccounts" class="spendingaccounts">
-              <span class="hidden-xs">{{userSpendingAccounts[0].Label}}:<br> {{userSpendingAccounts[0].Balance | currency}}</span>
+            <span class="hidden-xs">{{userSpendingAccounts[0].Label}}:<br> {{userSpendingAccounts[0].Balance | currency}}</span>
+          </li>
+          <li ng-if="userSpendingAccounts" class="spendingaccounts-xs">
+            <span class="hidden-sm hidden-md hidden-lg">{{userSpendingAccounts[0].Label}}:<br> {{userSpendingAccounts[0].Balance | currency}}</span>
           </li>
           <!--END SPENDING ACCOUNTS NAV-->
         </ul>
@@ -161,37 +166,6 @@
         <ul class="pull-right">
           <minicart></minicart>
         </ul>
-        <!-- Social Icons -->
-        <!-- <span class="hidden-xs hidden-sm">
-          <ul class="nav navbar-nav pull-right">
-            <li>
-              <a href="" target="_blank">
-                <i class="fa fa-linkedin"></i>
-              </a>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav pull-right">
-            <li>
-              <a href="" target="_blank">
-                <i class="fa fa-instagram"></i>
-              </a>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav pull-right">
-            <li>
-              <a href="" target="_blank">
-                <i class="fa fa-google-plus"></i>
-              </a>
-            </li>
-          </ul>
-        </span> -->
-        <!-- <ul class="nav navbar-nav pull-right">
-          <li>
-            <a href="" target="_blank">
-              <i class="fa fa-facebook"></i>
-            </a>
-          </li>
-        </ul> -->
       </div>
     </section>
   </nav>
@@ -199,7 +173,7 @@
     <a class="dropdown-toggle text-center" data-toggle="dropdown">
       <i class="fa fa-angle-down text-primary"></i>
     </a>
-    <ul class="451qa_topnav dropdown-menu" >
+    <ul class="451qa_topnav dropdown-menu">
       <categorytree tree='tree' current='currentCategory' />
     </ul>
   </nav>
