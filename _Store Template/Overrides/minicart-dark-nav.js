@@ -10,7 +10,7 @@ function minicart() {
       '<style>',
       '.minicart { padding: 15px 20px 5px 0; float: right; cursor: pointer;color: #ffffff; min-width:285px; text-align:right;}',
       '@media (max-width: 768px) {.minicart { min-width:auto; } }',
-      '.text-muted {color: #ffffff;}',
+      '.text-muted {color: #000000;}',
       '.text-mutedCaretDown {color: #ffffff;}',
       '.minicart .fa-shopping-cart {position: relative;top: 3px;padding-right: 5px; font-size:1.5em;}',
       '.minicart .label.label-default {border-top-right-radius: 0;border-top-left-radius: 0;border-bottom-right-radius: 0;border-bottom-left-radius: 0;background-color: transparent;}',

@@ -4,7 +4,9 @@
 <head>
   <!-- enable this script for site down message, disable for site active, script begin -->
   <!-- <script type="text/javascript">
-    { window.location.replace("sitedownSplashPage.html"); }
+    {
+      window.location.replace("sitedownSplashPage.html");
+    }
   </script> -->
   <!-- site down script end -->
   <!--baseTagToken-->
@@ -22,7 +24,6 @@
       top.location = self.location;
     }
   </script>
-  <!-- Set Window/Tab title here -->
   <title>Fiskars Webstore</title>
   <!-- Meta tags -->
   <meta charset="utf-8" />
@@ -30,8 +31,7 @@
   <!-- Set search description here, NO KEYWORDS, this is what shows up in Google. Make no longer than 150-160 characters. -->
   <!-- <meta name="description" content="Site Description Here" /> Commented out unless needed-->
   <!-- Favicon -->
-  <link rel="shortcut icon" href="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/Fiskars/images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/Fiskars/images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/Fiskars/images/favicon.ico" />
   <!-- Links to style files, fonts, etc. -->
   <link rel="stylesheet" href="css/bootstrap-451.css" data-group="source" />
   <link rel="stylesheet" href="css/theme.css" data-group="source" />
@@ -42,18 +42,28 @@
   <link href='//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
   <link href='//fonts.googleapis.com/css?family=Raleway:400,600,300,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/animate.min.css" />
-  <!--[if lt IE 9]> <div style="position:absolute; top:0; left:0; right:0; bottom:0; background-position:center center; background-size:cover; background-repeat:no-repeat;"></div> <div style="margin:50px auto 0; max-width:600px; text-align: center;
-    padding:20px; border:3px solid#f58220;font-family: Arial, Helvetica, sans-serif;"> <h1 style="color:#f58220; padding:20px;">This site uses advanced technology that requires a modern browser.</h1> <p style="color:#000; font-size:16px;">We recommend
-    that you update your browser to the current release of Internet Explorer, Firefox or Chrome. Beta versions of these browsers may work, but are not formally supported. <br/> <a style="color:#f58220; font-size:16px;" target="_blank"
-    href="https://windows.microsoft.com/en-us/internet-explorer/download-ie">Click here to find your upgrade link <i class="fa fa-external-link-square"></i> </a> </p> <p style="color:#000;"> <small> <em>*Site works best with most recent versions of <a
-    style="color:#f58220;" target="_blank" href="https://windows.microsoft.com/en-us/internet-explorer/download-ie">Internet Explorer</a>, <a style="color:#f58220;" target="_blank" href="//www.mozilla.org/en-US/firefox/new/" target="_blank">FireFox</a>
-    and <a style="color:#f58220;"href="//www.google.com/chrome/browser/" target="_blank">Chrome</a> </em> </small> </p> </div> <!--<![endif]-->
+  <!--[if lt IE 9]>
+    <div style="position:absolute; top:0; left:0; right:0; bottom:0; background-position:center center; background-size:cover; background-repeat:no-repeat;"></div>
+    <div style="margin:50px auto 0; max-width:600px; text-align: center; padding:20px; border:3px solid#f58220;font-family: Arial, Helvetica, sans-serif;">
+    <h1 style="color:#f58220; padding:20px;">This site uses advanced technology that requires a modern browser.</h1>
+    <p style="color:#000; font-size:16px;">We recommend that you update your browser to the current release of Internet Explorer, Firefox or Chrome. Beta versions of these browsers may work, but are not formally supported. <br/>
+    <a style="color:#f58220; font-size:16px;" target="_blank" href="https://windows.microsoft.com/en-us/internet-explorer/download-ie">Click here to find your upgrade link <i class="fa fa-external-link-square"></i>
+    </a>
+    </p>
+    <p style="color:#000;">
+    <small>
+    <em>*Site works best with most recent versions of <a style="color:#f58220;" target="_blank" href="https://windows.microsoft.com/en-us/internet-explorer/download-ie">Internet Explorer</a>, <a style="color:#f58220;" target="_blank" href="//www.mozilla.org/en-US/firefox/new/" target="_blank">FireFox</a> and <a style="color:#f58220;"href="//www.google.com/chrome/browser/" target="_blank">Chrome</a>
+    </em>
+    </small>
+    </p>
+    </div>
+    <!--<![endif]-->
 </head>
 <!--[if (gte IE 9)|!(IE)]><!-->
 
 <body ng-cloak ng-class="ng-cloak">
   <section>
-    <section ng-hide="Four51User.isAuthenticated() || (isAnon && Four51User.isAuthenticated())" class="container">
+    <section ng-hide="Four51User.isAuthenticated() || isAnon" class="container">
       <login />
     </section>
     <section ng-if="Four51User.isAuthenticated()" id="content">
@@ -86,6 +96,7 @@
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-touch.min.js" data-group="cdn"></script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-loader.min.js" data-group="cdn"></script>
   <script src="//cdn.ckeditor.com/4.4.7/basic/ckeditor.js" data-group="cdn"></script>
+
   <script src="lib/store.js" data-group="resources"></script>
   <script src="lib/angular_ui/ui-utils.min.js" data-group="resources"></script>
   <script src="lib/angular_ui/ui-bootstrap-tpls-0.10.0.min.js" data-group="resources"></script>
@@ -96,13 +107,16 @@
   <script src="lib/angular/plugins/ngAutocomplete.js" data-group="resources"></script>
   <script src="lib/oc/anonRouter.js" data-group="resources"></script>
   <script src="lib/oc/ordercloud-specforms.js" data-group="resources"></script>
+
   <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCIlcbzwi4Er8psS33a6QmcybuqDtyqjh4&libraries=places"></script>
+
   <script src="js/app.js" data-group="source"></script>
   <script src="js/four51consts.js" data-group="source"></script>
   <script src="js/451.js" data-group="source"></script>
   <script src="js/filters.js" data-group="source"></script>
   <script src="js/config.js" data-group="source"></script>
   <script src="js/routing.js" data-group="source"></script>
+
   <script src="js/controllers/Four51Ctrl.js" data-group="source"></script>
   <script src="js/controllers/categoryCtrl.js" data-group="source"></script>
   <script src="js/controllers/errorCtrl.js" data-group="source"></script>
@@ -136,8 +150,6 @@
   <script src="js/controllers/orderTypeSelectorCtrl.js" data-group="source"></script>
   <script src="js/controllers/reportViewCtrl.js" data-group="source"></script>
   <script src="js/controllers/kitCtrl.js" data-group="source"></script>
-  <script src="js/controllers/kitSpecFormCtrl.js" data-group="source"></script>
-  <script src="js/controllers/kitVariantCtrl.js" data-group="source"></script>
 
   <script src="js/interceptors.js" data-group="source"></script>
   <script src="js/services/errorService.js" data-group="source"></script>
@@ -169,7 +181,9 @@
   <script src="js/services/XLATTables.js" data-group="source"></script>
   <script src="js/services/XLATService.js" data-group="source"></script>
   <script src="js/services/kitService.js" data-group="source"></script>
+
   <script src="js/factories/fileReader.js" data-group="source"></script>
+
   <script src="js/directives/match.js" data-group="source"></script>
   <script src="js/directives/buttonredirect.js" data-group="source"></script>
   <script src="js/directives/product.js" data-group="source"></script>
@@ -209,6 +223,7 @@
   <script src="js/directives/creditcard.js" data-group="source"></script>
   <script src="js/directives/neworder.js" data-group="source"></script>
   <script src="js/directives/orderbuttons.js" data-group="source"></script>
+
   <!-- Custom Solutions-->
   <script src="lib/oc/productMatrix.js" data-group="resources"></script>
   <script src="lib/oc/categoryCollapse.js" data-group="resources"></script>
