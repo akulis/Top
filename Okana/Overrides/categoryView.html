@@ -29,7 +29,7 @@
   </div>
   <br> -->
   <!-- End Selective Category Heading -->
-  <nav id="451qa_nav_hdr" class="nav">
+  <!-- <nav id="451qa_nav_hdr" class="nav">
     <ul>
       <li class="hidden-sm hidden-xs">
         <span ng-click="toggleNav()"><i class="fa fa-bars" ng-class="{ 'text-info': navStatus.visible }"></i></span>
@@ -37,16 +37,17 @@
       <li>
         <span id="451_lbl_curcat" class="text-primary" ng-bind-html="currentCategory.Name || '  {{'Categories' | r | xlat}}'"></span>
       </li>
-      <li class="customSearchBar">
-        <productsearchinput></productsearchinput>
+      <li class="customSearchBar"> -->
+        <!-- <productsearchinput></productsearchinput> -->
         <!-- <a href="search">
           <span><i class="fa fa-search text-primary"></i></span>
         </a> -->
-      </li>
+      <!-- </li>
     </ul>
-  </nav>
+  </nav> -->
   <div class="row">
-    <aside class="col-md-3 visible-md visible-lg" ng-if="navStatus.visible">
+    <!-- Comment out for customer $ak -->
+    <!-- <aside class="col-md-3 visible-md visible-lg" ng-if="navStatus.visible">
       <div class="panel panel-default panel-nav">
         <div class="panel-heading">
           <h3 class="panel-title">{{'Category List' | r | xlat}}</h3>
@@ -57,8 +58,8 @@
           </ul>
         </nav>
       </div>
-    </aside>
-    <div ng-class="{ 'col-md-9': navStatus.visible, 'col-md-12': !navStatus.visible }">
+    </aside> -->
+    <div ng-class="{'col-md-12': !navStatus.visible }">
       <!-- Above Category Message -->
       <!-- <br>
       <div class="categoryPanel text-center" ng-show="(currentCategory.Name === {{'Categories' | r | xlat}})">
