@@ -6,29 +6,31 @@
   margin-left: auto;
   padding-top: 15px;
 }
-/* Jumbo Header Home Page*/
+
+/* Jumbo Header Text */
 .jumboHeaderText {
   text-align: center;
   /*vertical-align: middle;*/
-  padding-top: 20px;
+  /*padding-top: 20px;*/
   color: #ffffff;
+  /* Change banner color */
   /*position: relative;
   top: 50%;
   transform: translateY(-50%);*/
 }
-/* Jumbotron settings */
+
+.container .jumbotron, .container-view .jumbotron {
+  border-radius: 0px;
+}
+
+.jumbotron .row {
+  color: #ffffff;
+}
+
 .jumbotron {
-  background-color: #FFFFFF;
+  padding: 0px;
 }
-h2 .jumbotron {
-  color: #FFFFFF;
-}
-/* Spending Account Nav Option */
-.spendingaccounts {
-    padding: 15px 8px;
-    color: #ffffff;
-    font-size: 75%;
-}
+
 /* Navbar Logo */
 .navLogo {
   max-width: 100%;
@@ -37,7 +39,7 @@ h2 .jumbotron {
 /* Banner Logo */
 .bannerLogo {
   max-width: 100%;
-  max-height: 200px;
+  /* max-height: 200px; */
 }
 /* Footer Logo */
 .footerLogo {
@@ -461,4 +463,17 @@ body a {
 }
 .panel-product-list .well {
   border-color: #F7F7F7;
+}
+
+/* Spending Account Nav Option */
+.spendingaccounts {
+  padding: 15px 8px;
+  color: #ffffff;
+  font-size: 75%;
+}
+
+.spendingaccounts-xs {
+  padding: 18px 0px 0px 0px;
+  color: #ffffff;
+  font-size: 1.7vmin;
 }
