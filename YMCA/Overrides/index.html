@@ -2,13 +2,14 @@
 <html lang="en" ng-app="451order" ng-controller="Four51Ctrl">
 
 <head>
+  <!-- enable this script for site down message, disable for site active, script begin -->
+  <!-- <script type="text/javascript">
+    { window.location.replace("sitedownSplashPage.html"); }
+  </script> -->
+  <!-- site down script end -->
   <!--baseTagToken-->
   <!--headscriptToken-->
-  <style id="antiClickjack">
-    body {
-      display: none !important;
-    }
-  </style>
+    <style id="antiClickjack">body{display:none !important;}</style>
   <script type="text/javascript">
     if (self === top) {
       var antiClickjack = document.getElementById("antiClickjack");
@@ -25,7 +26,8 @@
   <!-- Set search description here, NO KEYWORDS, this is what shows up in Google. Make no longer than 150-160 characters. -->
   <!-- <meta name="description" content="Site Description Here" /> Commented out unless needed-->
   <!-- Favicon -->
-  <link rel="shortcut icon" href="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/YMCA/images/favicon.ico" />
+  <link rel="shortcut icon" href="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/YMCA/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/YMCA/images/favicon.ico" type="image/x-icon">
   <!-- Links to style files, fonts, etc. -->
   <link rel="stylesheet" href="css/bootstrap-451.css" data-group="source" />
   <link rel="stylesheet" href="css/theme.css" data-group="source" />
@@ -53,9 +55,7 @@
         <!--<![endif]-->
 </head>
 <!--[if (gte IE 9)|!(IE)]><!-->
-
 <body ng-cloak ng-class="ng-cloak">
-  <div class="TopWrapper">
     <section>
       <section ng-hide="Four51User.isAuthenticated() || (isAnon && Four51User.isAuthenticated())" class="container">
         <login />
@@ -70,44 +70,13 @@
         <section class="container-view">
           <ng-view autoscroll />
         </section>
+      <section class="hidden-print">
+        <fixedfooter />
       </section>
     </section>
-    <div class="push"></div>
-    <footer>
-      <div class="TopFooter visible-sm visible-md visible-lg">
-        <div class="footLeft">
-          <img class="footerLogo" src="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/YMCA/images/YMCA_Wht_Footer-150H.png" alt="For Youth Development. For Healthy Living. For Social Responsibilty." />
-        </div>
-        <div class="footRight">
-          <p>Contact Us</p>
-          <p><i class="fa fa-phone"></i> 1-877-742-5686</p>
-          <p><i class="fa fa-envelope"></i> <a href="mailto:ymcastore@toppromotions.com?subject=YMCA%20Apparel%20Store%20Help">ymcastore@toppromotions.com</a></p>
-        </div>
-      </div>
-      <div class="TopxsFooter visible-xs">
-        <div class="xsFootLeft">
-          <img class="footerLogo" src="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/YMCA/images/YMCA_Wht_Footer-150H.png" alt="For Youth Development. For Healthy Living. For Social Responsibilty." />
-        </div>
-        <div class="xsFootRight">
-          <p>Contact Us</p>
-          <p><i class="fa fa-phone"></i> 1-877-742-5686</p>
-          <p><i class="fa fa-envelope"></i> <a href="mailto:ymcastore@toppromotions.com?subject=YMCA%20Apparel%20Store%20Help">ymcastore@toppromotions.com</a></p>
-        </div>
-      </div>
-      <div class="TopxxsFooter visible-xxs">
-        <div class="xxsFootLeft">
-          <img class="footerLogo" src="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/YMCA/images/YMCA_Wht_Footer-150H.png" alt="For Youth Development. For Healthy Living. For Social Responsibilty." />
-        </div>
-        <div class="xxsFootRight">
-          <p>Contact Us</p>
-          <p><i class="fa fa-phone"></i> 1-877-742-5686</p>
-          <p><i class="fa fa-envelope"></i> <a href="mailto:ymcastore@toppromotions.com?subject=YMCA%20Apparel%20Store%20Help">ymcastore@toppromotions.com</a></p>
-        </div>
-      </div>
-    </footer>
-  </div>
+  </section>
 
-  <!-- Add for Back to Top icon -->
+  <!-- Add for Back to Top icon $ak -->
   <backtotop offsetbottom="30" offsetright="30" duration="200"></backtotop>
 
   <!--<script type="text/javascript" src="//dl1d2m8ri9v3j.cloudfront.net/releases/1.2.4/tracker.js" data-customer="bfec7bded14d43a7ace2697594e1369d"></script>-->
@@ -175,6 +144,8 @@
   <script src="js/controllers/orderTypeSelectorCtrl.js" data-group="source"></script>
   <script src="js/controllers/reportViewCtrl.js" data-group="source"></script>
   <script src="js/controllers/kitCtrl.js" data-group="source"></script>
+  <script src="js/controllers/kitSpecFormCtrl.js" data-group="source"></script>
+  <script src="js/controllers/kitVariantCtrl.js" data-group="source"></script>
 
   <script src="js/interceptors.js" data-group="source"></script>
   <script src="js/services/errorService.js" data-group="source"></script>
@@ -250,7 +221,6 @@
   <script src="js/directives/creditcard.js" data-group="source"></script>
   <script src="js/directives/neworder.js" data-group="source"></script>
   <script src="js/directives/orderbuttons.js" data-group="source"></script>
-
   <!-- Custom Solutions-->
   <script src="lib/oc/productMatrix.js" data-group="resources"></script>
   <script src="lib/oc/categoryCollapse.js" data-group="resources"></script>
@@ -263,7 +233,7 @@
   <script src="lib/oc/backToTop.js" data-group="resources"></script>
   <script src="lib/oc/sameAsShippingCheckbox.js" data-group="resources"></script>
   <script src="lib/oc/minicart.js" data-group="resources"></script>
+  <script src="lib/oc/fixedFooter.js" data-group="resources"></script>
 </body>
 <!-- <![endif]-->
-
 </html>

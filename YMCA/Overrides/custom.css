@@ -1,3 +1,37 @@
+/* Taken from overrides in bootstrap-451.css file */ 
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%; /* Added this to make sticky footer - $ak */
+}
+
+.well {
+  border-radius: 25px; /* add for rounded borders $ak */
+}
+
+/* Remove Border Radius and Border for Shopping Cart Icon, Add to Custom CSS for Shopping Cart Only. This is to avoid having circles around social media icons -$ak */
+.navbar .container .navbar-nav.pull-right li a i:first-of-type,
+.navbar .container-view .navbar-nav.pull-right li a i:first-of-type {
+  /*border-radius: 50%;
+  border: 1px solid #fff;*/
+  text-align: center;
+  padding: 10px;
+  margin-top: -10px;
+}
+
+.panel .panel-heading {
+  /* border-top: 2px solid #ffffff; */
+  padding: 0;
+}
+
+.panel-nav {
+    border-radius: 25px; /* add for rounded borders $ak */
+  font-size: 13px;
+}
+/* End bootstrap overrides */
+
 /* Jumbor Header Home Page*/
 .jumboHeaderText {
   text-align: center;

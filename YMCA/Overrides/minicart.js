@@ -1,11 +1,19 @@
 angular.module('OrderCloud-Minicart', []);
 
-angular.module('OrderCloud-Minicart').directive('minicart', minicart).controller('minicartCtrl', minicartCtrl);
+angular.module('OrderCloud-Minicart')
+    .directive('minicart', minicart)
+    .controller('minicartCtrl', minicartCtrl)
+;
 
 function minicart() {
-  return {restrict: 'E', transclude: true, template: template, controller: 'minicartCtrl'};
+    return {
+        restrict: 'E',
+        transclude: true,
+        template: template,
+        controller: 'minicartCtrl'
+    };
 
-  function template() {
+    function template(){
     return [
       '<style>',
       '.minicart { padding: 15px 20px 5px 0; float: right; cursor: pointer;color: #ffffff; min-width:285px; text-align:right;}',
@@ -90,7 +98,7 @@ function minicart() {
       '                <div class="col-xs-6">',
       '                    <a class="btn btn-default btn-block" href="cart">View Cart</a>',
       '                </div>',
-      '                <div class="col-xs-6">',
+            '                <div class="col-xs-6" ng-show="!user.Permissions.contains(\'PunchoutUser\')">',
       '                    <a class="btn btn-default btn-block" ng-click="cartCheckOut()">Checkout</a>',
       '                </div>',
       '            </div>',
@@ -107,21 +115,24 @@ function minicartCtrl($scope, $location, Order, OrderConfig, User) {
 
   $scope.removeItem = function(item, override) {
     if (override || confirm('Are you sure you wish to remove this item from your cart?') == true) {
-      Order.deletelineitem($scope.currentOrder.ID, item.ID, function(order) {
+            Order.deletelineitem($scope.currentOrder.ID, item.ID,
+                function(order) {
         $scope.currentOrder = order;
         Order.clearshipping($scope.currentOrder);
         if (!order) {
           $scope.user.CurrentOrderID = null;
-          User.save($scope.user, function() {
+                        User.save($scope.user, function(){
             $location.path('catalog');
           });
         }
         $scope.displayLoadingIndicator = false;
         $scope.actionMessage = 'Your Changes Have Been Saved';
-      }, function(ex) {
+                },
+                function (ex) {
         $scope.errorMessage = ex.Message.replace(/\<<Approval Page>>/g, 'Approval Page');
         $scope.displayLoadingIndicator = false;
-      });
+                }
+            );
     }
   };
 
@@ -129,24 +140,20 @@ function minicartCtrl($scope, $location, Order, OrderConfig, User) {
     $scope.displayLoadingIndicator = true;
     if (!$scope.isEditforApproval) 
       OrderConfig.address($scope.currentOrder, $scope.user);
-    Order.save($scope.currentOrder, function(data) {
+        Order.save($scope.currentOrder,
+            function(data) {
       $scope.currentOrder = data;
-      $location.path(
-        $scope.isEditforApproval
-        ? 'checkout/' + $routeParams.id
-        : 'checkout');
+                $location.path($scope.isEditforApproval ? 'checkout/' + $routeParams.id : 'checkout');
       $scope.displayLoadingIndicator = false;
-    }, function(ex) {
+            },
+            function(ex) {
       $scope.errorMessage = ex.Message;
       $scope.displayLoadingIndicator = false;
-    });
+            }
+        );
   };
 
-  $scope.$on('event:orderUpdate', function(event, order) {
-    $scope.currentOrder = order
-      ? (order.Status === 'Unsubmitted')
-        ? order
-        : null
-      : null;
+    $scope.$on('event:orderUpdate', function(event, order){
+        $scope.currentOrder = order ? (order.Status === 'Unsubmitted') ? order : null : null;
   })
 }
