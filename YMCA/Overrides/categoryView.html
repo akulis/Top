@@ -1,0 +1,166 @@
+<section>
+  <!-- Edit Announcement Here -->
+  <!-- <br> <div class="panel panel-primary"> <div class="panel-heading"> <h2 class="panel-title panel-primary"> {{'Announcement' | r | xlat}} </h2> </div> <div class="panel-body"> <h4 class="TOPcenter"> </h4> </div> </div> <br> -->
+  <!-- End Announcement -->
+  <!-- Camp Disclaimer -->
+  <div class="panel panel-primary" ng-show="(currentCategory.Name === 'Camp-Purchase Power')">
+    <div class="panel-heading">
+      <h2 class="panel-title panel-primary">
+        {{'Camp Purchase Power Ordering Schedule' | r | xlat}}
+      </h2>
+    </div>
+    <div class="panel-body">
+      <h4 class="TOPcenter">
+        <i class="fa fa-exclamation-circle" aria-hidden="true"></i> Purchase Power (PP) YMCA CAMP 2022 order window is OPEN. Orders placed TODAY through 4/8/22 will SHIP the WEEK of 5/16/22. Please keep STOCK item orders separate from CAMP or other Purchase Power Items as shipping charges will need to be assessed for each. </i>
+        </h4>
+      <h4 class="TOPcenter">Call customer service toll free at 1-877-742-5686 with questions. Please leave a message.</h4>
+    </div>
+  </div>
+  <!-- End Camp Disclaimer -->
+  <!-- Healthy Kids Disclaimer -->
+  <div class="panel panel-primary-orange" ng-show="(currentCategory.Name === 'PP-Healthy Kids Day')">
+    <div class="panel-heading">
+      <h2 class="panel-title panel-primary-orange">
+        {{'Healthy Kids Day' | r | xlat}}
+      </h2>
+    </div>
+    <div class="panel-body">
+      <h4 class="TOPcenter">
+        <i class="fa fa-exclamation-circle" aria-hidden="true"> 2022 Healthy Kids Day items are now available! Purchase Power items HK008 & YHK008 Ordering ends 3/4/22. SHIP week 4/4/22. </i>**</h4>
+    </div>
+  </div>
+  <!-- End Healthy Kids Disclaimer -->
+  <!-- Halloween Disclaimer -->
+  <div class="panel panel-primary-orange" ng-show="(currentCategory.Name === 'PP-Halloween')">
+    <div class="panel-heading">
+      <h2 class="panel-title panel-primary-orange">
+        {{'PP-Halloween Ordering Schedule' | r | xlat}}
+      </h2>
+    </div>
+    <div class="panel-body">
+      <h4 class="TOPcenter">
+        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>Purchase Power Halloween Ordering is July 20th through September 16th.  Orders will ship out the week of October 17th. No order cancellations accepted after 9/15/22. </h4>
+    </div>
+  </div>
+  <!-- Togetherhood Disclaimer -->
+  <br>
+  <div class="panel panel-primary" ng-show="(currentCategory.Name === 'Togetherhood')">
+    <div class="panel-heading">
+      <h2 class="panel-title panel-primary">
+        {{'Togetherhood Ordering Schedule' | r | xlat}}
+      </h2>
+    </div>
+    <div class="panel-body">
+      <h4 class="TOPcenter">
+        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+        Togetherhood designs are now only available as a custom order. Quotes will be provided upon request. Call 877-742-5686 for your Togetherhood t-shirt quote today! Thank you.</h4>
+    </div>
+  </div>
+  <br>
+  <!-- End Togetherhood Disclaimer -->
+  <!-- London Conference Disclaimer -->
+    <br>
+  <div class="panel panel-primary" ng-show="(currentCategory.Name === 'YMCA175 Delegate Items')">
+    <div class="panel-heading">
+      <h2 class="panel-title panel-primary">
+        {{'YMCA175 Ordering Schedule' | r | xlat}}
+      </h2>
+    </div>
+    <div class="panel-body">
+      <h4 class="TOPcenter">
+        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+        Orders will be collected through June 14th and will be shipped no later than the week of July 8th.</h4>
+    </div>
+  </div>
+  
+  
+  
+  <!-- Running Purchase Power Disclaimer -->
+  <!-- <br> <div class="panel panel-primary" ng-show="(currentCategory.Name === 'RP - Running Purchase Power' || currentCategory.Name === 'RPY-Polos' || currentCategory.Name === 'RPY-Tees' || currentCategory.Name === 'RPY-Outerwear' ||
+  currentCategory.Name === 'RPY-Twills')"> <div class="panel-heading"> <h2 class="panel-title panel-primary"> {{'***This program is ending 12/21/17***' | r | xlat}} </h2> </div> <div class="panel-body"> <h4 class="TOPcenter"><i class="fa
+  fa-exclamation-circle" aria-hidden="true"></i> All orders received from X date to Y date will ship out by the week of Z date. </h4> </div> </div> <br> -->
+  <!-- End Running Purchase Power Disclaimer -->
+  <!-- Print to Order Disclaimer -->
+  <br>
+  <div class="panel panel-primary" ng-show="(currentCategory.Name === 'Print to Order')">
+    <div class="panel-heading">
+      <h2 class="panel-title panel-primary">
+        {{'DISCLAIMER' | r | xlat}}
+      </h2>
+    </div>
+    <div class="panel-body">
+      <h4 class="TOPcenter">
+        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+        Please allow 15 business days, from the APPAREL STORE’s receipt of your order, to receive any in-stock items. Please see the “Shipping Rates and Policies” section of the
+        <a href="https://www.ymcastore.org/shop/contactus">“Contact Us”</a>
+    </div>
+  </div>
+  <br>
+  <!-- End Print to Order Disclaimer -->
+  <nav id="451qa_nav_hdr" class="nav">
+    <ul>
+      <li class="hidden-sm hidden-xs">
+        <span ng-click="toggleNav()">
+          <i class="fa fa-bars" ng-class="{ 'text-info': navStatus.visible }"></i>
+        </span>
+      </li>
+      <li>
+        <span id="451_lbl_curcat" class="text-primary" ng-bind-html="currentCategory.Name || '  {{'Categories' | r | xlat}}'"></span>
+      </li>
+      <li class="customSearchBar">
+        <productsearchinput></productsearchinput>
+        <!-- <a href="search"> <span><i class="fa fa-search text-primary"></i></span> </a> -->
+      </li>
+    </ul>
+  </nav>
+  <div class="row">
+    <aside class="col-md-3 visible-md visible-lg" ng-if="navStatus.visible">
+      <div class="panel panel-default panel-nav">
+        <div class="panel-heading panel-top-rounded">
+          <h3 class="panel-title">
+            {{'Category List' | r | xlat}}
+          </h3>
+        </div>
+        <nav class="nav 451qa_sidenav panel-body">
+          <ul>
+            <categorycollapse tree='tree' current='currentCategory'></categorycollapse>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <div ng-class="{ 'col-md-9': navStatus.visible, 'col-md-12': !navStatus.visible }">
+      <!-- Above Category Message -->
+      <br>
+      <div class="categoryPanel text-center" ng-show="(currentCategory.Name === {{'Categories' | r | xlat}})">
+        <!-- <h2 class="colorBlack"><strong>Welcome to the YMCA Webstore!</strong></h2>
+        <h4>Your resource for high quality apparel</h4> -->
+        <!-- <ul>
+        </ul> -->
+        <!--h4><strong>To Our Valued Customers,</h4>
+        <h4><strong>The impact of Covid-19 has been far reaching and has touched all of us in some way.  Our lives, and those of our co-workers, families, communities and customers, have changed dramatically in the course of a few weeks and in ways we could have never imagined.  As we move forward, we keep those who suffered loss in our hearts and minds. Please know we are here for you and you are all in our thoughts.</h4--!>
+        <br>
+        <br>
+        <br>
+        <h4>Please note, any order that has a rush request, such as a 2nd day air or next day air, will not ship until after the 5-7 day order process. Please call our customer service number for more details on how we can work with your deadline.</h4>
+        <h4>Top Promotions will continue to make every effort to keep costs low but due to increases in tariffs on product inbound into the USA, it is possible that pricing will need to be adjusted accordingly. Pricing is subject to change without
+          notice.</h4>
+          <h2 class="colorRed"><strong></strong></h2>
+      </div>
+      <br>
+      <!-- End Message -->
+      <categorylistview></categorylistview>
+      <loadingindicator ng-show="productLoadingIndicator" title="{{'Please wait while we fetch all products' | r | xlat}}" />
+      <!-- Below Category Message -->
+      <!-- <br>
+      <div class="categoryPanel" ng-show="(currentCategory.Name === {{'Categories' | r | xlat}})">
+        <ul>
+          <li>Orders will be accepted until XXX and product will ship by XXX.</li>
+          <li>Each item is custom made just for you, we appreciate your understanding that returns are not accepted except in the case of defective product.</li>
+        </ul>
+      </div>
+      <br> -->
+      <!-- End Message -->
+      <productlistview></productlistview>
+    </div>
+  </div>
+</section>
