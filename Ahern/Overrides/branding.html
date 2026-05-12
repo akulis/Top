@@ -1,0 +1,16 @@
+<header class="jumbotron" role="banner" ng-class="{'active': isActive('catalog')}" ng-show="user.Company.LogoUrl">
+  <customcarousel></customcarousel>
+  <div class="container">
+    <div class="row jumboHeader">
+      <div ng-show="Four51User.isAuthenticated()">
+        <a href="catalog" aria-label="View Catalog">
+          <img class="bannerLogo" 
+               src="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/Ahern/images/Ahern-Banner-2000.jpg" 
+               alt="Welcome to the Ahern Webstore" 
+               loading="lazy">
+        </a>
+        <home-message></home-message>
+      </div>
+    </div>
+  </div>
+</header>
