@@ -1,0 +1,25 @@
+<div class="panel-category-list no-panels" ng-show="currentCategory.SubCategories.length">
+    <loadingindicator ng-show="categoryLoadingIndicator" title="{{'Please wait while we fetch all categories' | r | xlat}}" />
+    <nav class="nav 451_lbl_subcatlist">
+        <ul class="row list-unstyled">
+            <li class="col-lg-3 col-md-3 col-sm-4 col-xs-4 col-xxs-4" ng-repeat="c in currentCategory.SubCategories">
+                <div>
+                    <a ng-href="{{c.InteropID == 'asi' ? 'asi' : 'catalog'}}/{{c.InteropID}}" aria-label="{{c.Name}}">
+                        <figure ng-show="c.Image.URL">
+                            <img class="img-responsive hidden-xs hidden-xxs" ng-src="{{c.Image.URL}}" alt="{{c.Name}}"/>
+                            <h5 class="TPCategoryTitle hidden-sm hidden-md hidden-lg" ng-bind-html="c.Name" />
+                        </figure>
+                    </a>
+                </div>
+            </li>
+            <li class="col-lg-3 col-md-3 col-sm-4 col-xs-4 col-xxs-4">
+                <div>
+                    <a ng-href="https://www.viewflipbook.com/304000083672" target="_blank" rel="noopener noreferrer" aria-label="YMCA 2026 Catalog - Opens in a new window">
+                        <img class="img-responsive" ng-src="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/YMCA/images/YMCA-Categories-2026-Catalog.jpg" alt="2026 YMCA Catalog"/>
+                        <span class="sr-only">(opens in a new window)</span>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</div>
